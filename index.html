@@ -4,6 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Crousti FR – Espace Créatrices 18+</title>
+/* ── MODAL MENTIONS LÉGALES ─────────────────────────────────────────────── */
+.ml-overlay{position:fixed;inset:0;background:rgba(9,7,10,.87);z-index:500;display:none;align-items:center;justify-content:center;padding:1.5rem}
+.ml-overlay.open{display:flex}
+.ml-box{background:var(--creme);color:var(--noir);border-radius:20px;border:3px solid var(--noir);box-shadow:8px 8px 0 var(--noir);max-width:760px;width:100%;max-height:88vh;overflow-y:auto;padding:2.5rem 3rem;position:relative}
+@media(max-width:640px){.ml-box{padding:1.8rem 1.4rem}}
+.ml-close{position:absolute;top:1.2rem;right:1.5rem;background:var(--rose);border:2px solid var(--noir);border-radius:50%;width:36px;height:36px;font-size:1rem;font-weight:900;cursor:pointer;color:var(--noir);transition:transform .2s;line-height:1}
+.ml-close:hover{transform:scale(1.15)}
+.ml-logo{display:flex;align-items:center;gap:.3rem;margin-bottom:1.5rem}
+.ml-logo b.r{color:var(--rose);font-weight:900;font-size:1.3rem}
+.ml-logo b{font-weight:900;font-size:1.3rem}
+.ml-h1{font-size:1.5rem;font-weight:900;text-transform:uppercase;letter-spacing:-1px;margin-bottom:1.8rem;padding-bottom:.8rem;border-bottom:3px solid var(--noir)}
+.ml-sec{margin-bottom:1.5rem}
+.ml-sec h2{font-size:.72rem;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:.5rem;border:none;padding:0}
+.ml-sec p,.ml-sec ul{font-size:.86rem;line-height:1.75;color:rgba(9,7,10,.82)}
+.ml-sec ul{padding-left:1.2rem}
+.ml-sec ul li{margin-bottom:.3rem}
+.ml-sec a{color:var(--rose)}
+.ml-sep{border:none;border-top:1px solid rgba(9,7,10,.15);margin:1.2rem 0}
+.ml-warn{background:var(--cerise);border:2px solid var(--noir);border-radius:12px;padding:.9rem 1.2rem;margin-bottom:1.8rem;font-size:.82rem;font-weight:800;color:var(--creme);line-height:1.6;text-align:center}
+.ml-foot{margin-top:2rem;text-align:center;font-size:.72rem;color:rgba(9,7,10,.45);letter-spacing:1px;text-transform:uppercase}
 <style>
 /* ── VARIABLES ──────────────────────────────────────────────────────────── */
 :root{
@@ -916,12 +936,108 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
   <div class="foot-links">
     <a class="foot-link" href="#" target="_blank">Instagram</a>
     <a class="foot-link" href="#" target="_blank">Email créatrices</a>
-    <a class="foot-link" href="#" target="_blank">Mentions légales</a>
+    <a class="foot-link" href="#" onclick="openML(); return false;">Mentions légales</a>
     <a class="foot-link" href="#" target="_blank">Confidentialité</a>
   </div>
   <span class="foot-18">18+</span>
 </footer>
+<!-- ══ MODAL MENTIONS LÉGALES ═════════════════════════════════════════════ -->
+<div class="ml-overlay" id="ml-overlay" onclick="if(event.target===this)closeML()">
+  <div class="ml-box">
+    <button class="ml-close" onclick="closeML()" aria-label="Fermer">&times;</button>
+    <div class="ml-logo">
+      <b class="r">CROUSTI</b><b>FR</b><span style="font-size:1.2rem">💠</span>
+    </div>
+    <h1 class="ml-h1">Mentions légales</h1>
 
+    <div class="ml-warn">
+      &#9888;&#65039; Ce site est exclusivement réservé aux personnes majeures (18 ans et plus). En accédant à ce site, vous attestez avoir l&apos;âge légal requis dans votre pays de résidence.
+    </div>
+
+    <div class="ml-sec">
+      <h2>1. Éditeur du site</h2>
+      <p>
+        <strong>Raison sociale :</strong> JACQUELINE Arnaud Marc Thibault<br>
+        <strong>Statut :</strong> Entrepreneur Individuel (EI)<br>
+        <strong>Immatriculé au RCS :</strong> 978 612 463 R.C.S. Chartres<br>
+        <strong>Date d&apos;immatriculation :</strong> 25 août 2023<br>
+        <strong>Début d&apos;activité :</strong> 3 août 2023<br>
+        <strong>Adresse :</strong> 15 Rue Du Bois Sabot, Appartement N1, 28100 Dreux<br>
+        <strong>Activité :</strong> Achat et revente de photos et vidéos érotiques explicites. Création et vente de contenus générés par IA.
+      </p>
+    </div>
+
+    <hr class="ml-sep">
+
+    <div class="ml-sec">
+      <h2>2. Directeur de la publication</h2>
+      <p>JACQUELINE Arnaud Marc Thibault, responsable légal de l&apos;entreprise individuelle éditrice du présent site.</p>
+    </div>
+
+    <hr class="ml-sep">
+
+    <div class="ml-sec">
+      <h2>3. Hébergement</h2>
+      <p>
+        <strong>Netlify, Inc.</strong><br>
+        512 2nd Street, Suite 200 — San Francisco, CA 94107, États-Unis<br>
+        <a href="https://www.netlify.com" target="_blank">www.netlify.com</a>
+      </p>
+    </div>
+
+    <hr class="ml-sep">
+
+    <div class="ml-sec">
+      <h2>4. Nature du contenu</h2>
+      <p>Ce site diffuse des informations relatives au recrutement de créatrices de contenu érotique adulte (18+). L&apos;accès implique l&apos;attestation explicite de majorité légale de l&apos;utilisateur. Conformément à l&apos;article 23 de la loi n°2004-575 du 21 juin 2004 (LCEN), ce site contient des contenus destinés aux adultes.</p>
+    </div>
+
+    <hr class="ml-sep">
+
+    <div class="ml-sec">
+      <h2>5. Propriété intellectuelle</h2>
+      <p>L&apos;ensemble des contenus présents sur ce site (textes, graphismes, logos, charte graphique) est protégé par le droit de la propriété intellectuelle et appartient exclusivement à JACQUELINE Arnaud Marc Thibault. Toute reproduction, distribution ou exploitation sans autorisation préalable écrite est interdite.</p>
+    </div>
+
+    <hr class="ml-sep">
+
+    <div class="ml-sec">
+      <h2>6. Données personnelles &amp; RGPD</h2>
+      <p>Les données collectées via le formulaire de candidature (prénom/pseudo, âge, e-mail, zone géographique, motivation) sont utilisées exclusivement pour le traitement des candidatures et ne sont jamais cédées à des tiers.</p>
+      <ul>
+        <li><strong>Responsable du traitement :</strong> JACQUELINE Arnaud Marc Thibault</li>
+        <li><strong>Finalité :</strong> gestion des candidatures créatrices</li>
+        <li><strong>Durée de conservation :</strong> 2 ans à compter de la dernière interaction</li>
+        <li><strong>Droits :</strong> accès, rectification, suppression, portabilité — par e-mail auprès de l&apos;éditeur</li>
+        <li><strong>Fondement légal :</strong> consentement explicite (RGPD art. 6-1-a)</li>
+      </ul>
+      <p style="margin-top:.6rem">Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée et au RGPD (UE) 2016/679, vous disposez d&apos;un droit d&apos;accès, de rectification et de suppression de vos données.</p>
+    </div>
+
+    <hr class="ml-sep">
+
+    <div class="ml-sec">
+      <h2>7. Cookies</h2>
+      <p>Ce site n&apos;utilise pas de cookies de traçage ou de mesure d&apos;audience. Aucun cookie tiers n&apos;est déposé lors de votre navigation.</p>
+    </div>
+
+    <hr class="ml-sep">
+
+    <div class="ml-sec">
+      <h2>8. Limitation de responsabilité</h2>
+      <p>L&apos;éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant de l&apos;utilisation de ce site. Les informations présentes sont fournies à titre indicatif et peuvent être modifiées à tout moment.</p>
+    </div>
+
+    <hr class="ml-sep">
+
+    <div class="ml-sec">
+      <h2>9. Droit applicable</h2>
+      <p>Le présent site et ses mentions légales sont soumis au droit français. Tout litige sera soumis aux juridictions compétentes du ressort du Tribunal de Commerce de Chartres.</p>
+    </div>
+
+    <div class="ml-foot">Crousti FR &copy; 2023 — JACQUELINE Arnaud &middot; RCS 978 612 463 Chartres</div>
+  </div>
+</div>
 <!-- ══ JAVASCRIPT ════════════════════════════════════════════════════════════ -->
 <script>
 /* ── Smooth scroll ─────────────────────────────────────────────────────── */
@@ -1026,6 +1142,10 @@ document.querySelectorAll('.temo-card').forEach(function(el,i){ el.dataset.d = i
 document.querySelectorAll('.faq-item').forEach(function(el,i){ el.dataset.d = i*55; });
 document.querySelectorAll('.step').forEach(function(el,i){ el.dataset.d = i*70; });
 document.querySelectorAll('.rv').forEach(function(el){ obs.observe(el); });
+/* ── Modal Mentions Légales ────────────────────────────────────────────── */
+function openML(){document.getElementById('ml-overlay').classList.add('open');document.body.style.overflow='hidden'}
+function closeML(){document.getElementById('ml-overlay').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeML()});  
 </script>
 </body>
 </html>
