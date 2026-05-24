@@ -10,8 +10,7 @@
 html{scroll-behavior:smooth}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--noir);color:var(--creme);overflow-x:hidden}
 button,input,select,textarea{font-family:inherit}
-button{cursor:pointer}
-a{text-decoration:none}
+button{cursor:pointer}a{text-decoration:none}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes badgeSpin{0%,100%{transform:rotate(-12deg) scale(1)}25%{transform:rotate(-8deg) scale(1.06)}75%{transform:rotate(-16deg) scale(.96)}}
 @keyframes badgeSpin2{0%,100%{transform:rotate(8deg) scale(1)}50%{transform:rotate(12deg) scale(1.05)}}
@@ -72,17 +71,12 @@ nav{display:flex;gap:.7rem;flex-wrap:wrap}
 .btn-outline:hover{background:var(--creme);color:var(--noir)}
 .hero-pills{display:flex;gap:.6rem;flex-wrap:wrap;animation:fadeUp .6s 1.1s ease both}
 .pill{border-radius:50px;padding:5px 14px;font-size:.74rem;font-weight:800;border:2px solid var(--noir);box-shadow:2px 2px 0 #000}
-.pill-c{background:var(--creme);color:var(--noir)}
-.pill-v{background:var(--violet);color:var(--creme)}
-.pill-j{background:var(--jaune);color:var(--noir)}
-.pill-r{background:var(--rose);color:var(--noir)}
+.pill-c{background:var(--creme);color:var(--noir)}.pill-v{background:var(--violet);color:var(--creme)}.pill-j{background:var(--jaune);color:var(--noir)}.pill-r{background:var(--rose);color:var(--noir)}
 .ticker{overflow:hidden;white-space:nowrap;border-top:3px solid var(--noir);border-bottom:3px solid var(--noir);padding:11px 0}
-.ticker-rose{background:var(--rose)}
-.ticker-violet{background:var(--violet)}
+.ticker-rose{background:var(--rose)}.ticker-violet{background:var(--violet)}
 .ticker-track{display:inline-flex;animation:ticker 18s linear infinite}
 .ticker-item{font-weight:900;font-size:.8rem;margin-right:3rem;letter-spacing:2px;text-transform:uppercase;flex-shrink:0}
-.ticker-rose .ticker-item{color:var(--noir)}
-.ticker-violet .ticker-item{color:var(--creme)}
+.ticker-rose .ticker-item{color:var(--noir)}.ticker-violet .ticker-item{color:var(--creme)}
 .slbl{font-size:.65rem;font-weight:900;letter-spacing:3px;text-transform:uppercase;display:block;margin-bottom:.6rem}
 #profils{background:var(--creme);padding:5rem 2rem}
 .profils-wrap{max-width:1080px;margin:0 auto}
@@ -125,8 +119,7 @@ nav{display:flex;gap:.7rem;flex-wrap:wrap}
 .man-quote{font-size:clamp(1.1rem,2.5vw,1.4rem);color:var(--jaune);font-weight:800;font-style:italic;line-height:1.8;margin-bottom:1.2rem}
 .process-hdr{background:var(--violet);padding:3rem 2rem 2rem;text-align:center;border-top:3px solid var(--noir);border-bottom:3px solid var(--noir)}
 .process-h2{font-size:clamp(2rem,5vw,3rem);font-weight:900;color:var(--creme);letter-spacing:-2px;text-transform:uppercase}
-.process-h2 .j{color:var(--jaune)}
-.process-h2 .r{color:var(--rose)}
+.process-h2 .j{color:var(--jaune)}.process-h2 .r{color:var(--rose)}
 .process-grid{display:grid;grid-template-columns:repeat(3,1fr)}
 .step{padding:2.5rem 2rem;border:1px solid var(--noir)}
 .step:nth-child(-n+3){border-top:3px solid var(--noir)}
@@ -157,8 +150,7 @@ nav{display:flex;gap:.7rem;flex-wrap:wrap}
 .temo-txt{font-size:.88rem;line-height:1.75;font-style:italic;margin-bottom:1.2rem}
 .temo-sep{border-top:1px solid rgba(0,0,0,.1);padding-top:1rem;display:flex;align-items:center;gap:.7rem}
 .temo-av{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.95rem;flex-shrink:0}
-.temo-name{font-weight:800;font-size:.78rem}
-.temo-uni{font-size:.7rem;opacity:.6}
+.temo-name{font-weight:800;font-size:.78rem}.temo-uni{font-size:.7rem;opacity:.6}
 #faq{background:var(--bleu);padding:5rem 2rem;border-top:3px solid var(--noir)}
 .faq-wrap{max-width:740px;margin:0 auto}
 .faq-h2{font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--creme);letter-spacing:-2px;margin-bottom:2.5rem;text-transform:uppercase}
@@ -205,15 +197,13 @@ textarea.form-ctrl{min-height:85px;resize:vertical}
 .form-ok p{color:rgba(255,241,214,.8);line-height:1.7}
 footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .foot-logo{display:flex;align-items:center;gap:.3rem}
-.foot-logo b.r{color:var(--rose);font-weight:900}
-.foot-logo b{font-weight:900}
+.foot-logo b.r{color:var(--rose);font-weight:900}.foot-logo b{font-weight:900}
 .foot-links{display:flex;gap:1.5rem;flex-wrap:wrap}
 .foot-link{font-size:.75rem;color:rgba(255,241,214,.4);font-weight:600;transition:color .2s}
 .foot-link:hover{color:var(--rose)}
 .foot-18{font-size:.65rem;font-weight:800;color:var(--cerise);border:1px solid rgba(229,29,78,.33);padding:3px 10px;border-radius:20px}
 @media(max-width:900px){.seg-cards{grid-template-columns:repeat(3,1fr)}.sp-body{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr}.gar-grid{grid-template-columns:1fr 1fr}.temo-grid{grid-template-columns:1fr}.hero-img{width:100%;opacity:.25}}
 @media(max-width:640px){.nav-lnk{display:none}.seg-cards{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr}.gar-grid{grid-template-columns:1fr}.temo-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
-/* MODAL MENTIONS LEGALES */
 .ml-overlay{position:fixed;inset:0;background:rgba(9,7,10,.88);z-index:500;display:none;align-items:center;justify-content:center;padding:1.5rem}
 .ml-overlay.open{display:flex}
 .ml-box{background:var(--creme);color:var(--noir);border-radius:20px;border:3px solid var(--noir);box-shadow:8px 8px 0 var(--noir);max-width:760px;width:100%;max-height:88vh;overflow-y:auto;padding:2.5rem 3rem;position:relative}
@@ -221,21 +211,32 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
 .ml-close{position:absolute;top:1.2rem;right:1.5rem;background:var(--rose);border:2px solid var(--noir);border-radius:50%;width:36px;height:36px;font-size:1rem;font-weight:900;cursor:pointer;color:var(--noir);transition:transform .2s;display:flex;align-items:center;justify-content:center}
 .ml-close:hover{transform:scale(1.15)}
 .ml-logo{display:flex;align-items:center;gap:.3rem;margin-bottom:1.5rem}
-.ml-logo b.r{color:var(--rose);font-weight:900;font-size:1.3rem}
-.ml-logo b{font-weight:900;font-size:1.3rem}
+.ml-logo b.r{color:var(--rose);font-weight:900;font-size:1.3rem}.ml-logo b{font-weight:900;font-size:1.3rem}
 .ml-h1{font-size:1.5rem;font-weight:900;text-transform:uppercase;letter-spacing:-1px;margin-bottom:1.8rem;padding-bottom:.8rem;border-bottom:3px solid var(--noir)}
 .ml-sec{margin-bottom:1.5rem}
 .ml-sec h2{font-size:.72rem;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:.5rem}
 .ml-sec p,.ml-sec ul{font-size:.86rem;line-height:1.75;color:rgba(9,7,10,.82)}
-.ml-sec ul{padding-left:1.2rem}
-.ml-sec ul li{margin-bottom:.3rem}
-.ml-sec a{color:var(--rose)}
+.ml-sec ul{padding-left:1.2rem}.ml-sec ul li{margin-bottom:.3rem}.ml-sec a{color:var(--rose)}
 .ml-sep{border:none;border-top:1px solid rgba(9,7,10,.15);margin:1.2rem 0}
 .ml-warn{background:var(--cerise);border:2px solid var(--noir);border-radius:12px;padding:.9rem 1.2rem;margin-bottom:1.8rem;font-size:.82rem;font-weight:800;color:var(--creme);line-height:1.6;text-align:center}
 .ml-foot{margin-top:2rem;text-align:center;font-size:.72rem;color:rgba(9,7,10,.4);letter-spacing:1px;text-transform:uppercase}
+#age-gate{position:fixed;inset:0;z-index:9999;background:var(--noir);display:flex;align-items:center;justify-content:center;padding:2rem;transition:opacity .5s ease}
+.ag-yes{background:var(--rose);color:var(--noir);border:2px solid var(--noir);padding:15px;border-radius:50px;font-size:.9rem;font-weight:900;letter-spacing:1px;text-transform:uppercase;animation:pulseGlow 3s 1s ease-in-out infinite;width:100%;margin-bottom:.7rem}
+.ag-yes:hover{opacity:.88}
+.ag-no{background:transparent;color:rgba(255,241,214,.27);border:2px solid rgba(255,241,214,.1);padding:9px;border-radius:50px;font-size:.76rem;font-weight:700;width:100%;transition:all .2s}
+.ag-no:hover{color:rgba(255,241,214,.5);border-color:rgba(255,241,214,.25)}
 </style>
 </head>
 <body>
+<div id="age-gate"><div style="max-width:450px;width:100%;text-align:center">
+<p style="font-weight:900;font-size:1.85rem;letter-spacing:-1px;margin-bottom:1.5rem"><span style="color:var(--rose)">CROUSTI</span>FR &#128160;</p>
+<div style="width:84px;height:84px;border-radius:50%;background:var(--cerise);border:3px solid rgba(255,241,214,.25);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.7rem;margin:0 auto 1.2rem;color:var(--creme);animation:badgeSpin 4s ease-in-out infinite">18+</div>
+<h2 style="font-size:clamp(1.3rem,5vw,1.9rem);font-weight:900;letter-spacing:-2px;text-transform:uppercase;margin-bottom:.7rem;line-height:1.15">Acc&egrave;s r&eacute;serv&eacute; aux<br><span style="color:var(--rose)">adultes (18+)</span></h2>
+<p style="font-size:.85rem;color:rgba(255,241,214,.58);line-height:1.75;margin:0 auto 1.2rem;max-width:370px">Crousti FR recrute des cr&eacute;atrices de contenu adulte. Acc&egrave;s r&eacute;serv&eacute; aux personnes majeures.</p>
+<p style="background:rgba(229,29,78,.1);border:1px solid rgba(229,29,78,.25);border-radius:10px;padding:.7rem 1rem;font-size:.71rem;color:rgba(255,241,214,.52);line-height:1.6;margin-bottom:1.5rem;text-align:left">&#9888; Art.23 LCEN&nbsp;: contenu adulte. En entrant vous d&eacute;clarez avoir 18&nbsp;ans ou plus.</p>
+<button class="ag-yes" onclick="ageConfirm()">&#10003; J&rsquo;ai 18&nbsp;ans ou plus &mdash; Entrer</button>
+<button class="ag-no" onclick="ageRefuse()">J&rsquo;ai moins de 18&nbsp;ans &mdash; Quitter</button>
+</div></div>
 <header>
   <div class="logo"><span class="logo-c">CROUSTI</span><span class="logo-fr">FR</span><span class="logo-heel">&#128160;</span></div>
   <nav>
@@ -246,30 +247,14 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
 </header>
 <section id="hero">
   <div class="hero-bg">
-    <div class="hero-img">
-      <img src="hero.jpg" alt="Crousti FR" onerror="this.parentElement.style.display='none'">
-      <div class="hero-img-fade"></div>
-      <div class="hero-img-veil"></div>
-    </div>
-    <div class="band band-r"></div>
-    <div class="band band-v"></div>
-    <div class="band band-j"></div>
-    <div class="deco d1"></div>
-    <div class="deco d2"></div>
-    <div class="deco d3"></div>
+    <div class="hero-img"><img src="hero.jpg" alt="Crousti FR" onerror="this.parentElement.style.display='none'"><div class="hero-img-fade"></div><div class="hero-img-veil"></div></div>
+    <div class="band band-r"></div><div class="band band-v"></div><div class="band band-j"></div>
+    <div class="deco d1"></div><div class="deco d2"></div><div class="deco d3"></div>
   </div>
-  <div class="hero-badge">
-    <div class="hero-badge-label">Recrutement</div>
-    <div class="hero-badge-open">OUVERT</div>
-    <div>&#128160;</div>
-  </div>
+  <div class="hero-badge"><div class="hero-badge-label">Recrutement</div><div class="hero-badge-open">OUVERT</div><div>&#128160;</div></div>
   <div class="hero-content">
     <div class="hero-overline"><div class="overline-bar"></div><span class="overline-txt">Crousti FR &middot; Espace cr&eacute;atrices &middot; 18+</span></div>
-    <h1 class="hero-h1">
-      <span class="hw"><span>L&rsquo;ATTITUDE</span></span>
-      <span class="hw"><span>PRIME</span></span>
-      <span class="hw"><span>SUR TOUT.</span></span>
-    </h1>
+    <h1 class="hero-h1"><span class="hw"><span>L&rsquo;ATTITUDE</span></span><span class="hw"><span>PRIME</span></span><span class="hw"><span>SUR TOUT.</span></span></h1>
     <p class="hero-sub">Crousti FR ne cherche pas un type de corps. On cherche une &eacute;nergie, une curiosit&eacute;, une fa&ccedil;on d&rsquo;&ecirc;tre dans le cadre. Pop, color&eacute;, d&eacute;complex&eacute;.</p>
     <div class="hero-ctas">
       <button class="btn-main" onclick="goTo('profils')">Trouver mon profil &#128160;</button>
@@ -283,29 +268,10 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
     </div>
   </div>
 </section>
-<div class="ticker ticker-rose">
-  <div class="ticker-track">
-    <span class="ticker-item">&#127800; LA POP CURIEUSE</span>
-    <span class="ticker-item">&#128160; L&rsquo;ATTITUDE ASSUM&Eacute;E</span>
-    <span class="ticker-item">&#129309; LA COMPLICIT&Eacute; OUVERTE</span>
-    <span class="ticker-item">&#128302; L&rsquo;ORIGINALE D&Eacute;CAL&Eacute;E</span>
-    <span class="ticker-item">&#9889; L&rsquo;&Eacute;NERGIQUE POP</span>
-    <span class="ticker-item">&#127800; LA POP CURIEUSE</span>
-    <span class="ticker-item">&#128160; L&rsquo;ATTITUDE ASSUM&Eacute;E</span>
-    <span class="ticker-item">&#129309; LA COMPLICIT&Eacute; OUVERTE</span>
-    <span class="ticker-item">&#128302; L&rsquo;ORIGINALE D&Eacute;CAL&Eacute;E</span>
-    <span class="ticker-item">&#9889; L&rsquo;&Eacute;NERGIQUE POP</span>
-  </div>
-</div>
+<div class="ticker ticker-rose"><div class="ticker-track"><span class="ticker-item">&#127800; LA POP CURIEUSE</span><span class="ticker-item">&#128160; L&rsquo;ATTITUDE ASSUM&Eacute;E</span><span class="ticker-item">&#129309; LA COMPLICIT&Eacute; OUVERTE</span><span class="ticker-item">&#128302; L&rsquo;ORIGINALE D&Eacute;CAL&Eacute;E</span><span class="ticker-item">&#9889; L&rsquo;&Eacute;NERGIQUE POP</span><span class="ticker-item">&#127800; LA POP CURIEUSE</span><span class="ticker-item">&#128160; L&rsquo;ATTITUDE ASSUM&Eacute;E</span><span class="ticker-item">&#129309; LA COMPLICIT&Eacute; OUVERTE</span><span class="ticker-item">&#128302; L&rsquo;ORIGINALE D&Eacute;CAL&Eacute;E</span><span class="ticker-item">&#9889; L&rsquo;&Eacute;NERGIQUE POP</span></div></div>
 <section id="profils">
   <div class="profils-wrap">
-    <div class="profils-hdr rv rl">
-      <div>
-        <span class="slbl" style="color:var(--rose)">5 profils recherch&eacute;s</span>
-        <h2 class="profils-h2">Tu te reconnais<br><span>dans lequel&nbsp;?</span></h2>
-      </div>
-      <p class="profils-sub">Clique sur le profil qui te ressemble pour voir ce qu&rsquo;on attend de toi.</p>
-    </div>
+    <div class="profils-hdr rv rl"><div><span class="slbl" style="color:var(--rose)">5 profils recherch&eacute;s</span><h2 class="profils-h2">Tu te reconnais<br><span>dans lequel&nbsp;?</span></h2></div><p class="profils-sub">Clique sur le profil qui te ressemble pour voir ce qu&rsquo;on attend de toi.</p></div>
     <div class="seg-cards">
       <div class="seg-card rv rp" onclick="openSeg(0)"><div class="seg-emoji">&#127853;</div><div class="seg-name">La Pop<br>Curieuse</div><div class="seg-age">18 &ndash; 30 ans</div></div>
       <div class="seg-card rv rp" onclick="openSeg(1)"><div class="seg-emoji">&#128139;</div><div class="seg-name">L&rsquo;Attitude<br>Assum&eacute;e</div><div class="seg-age">25 ans et +</div></div>
@@ -314,51 +280,11 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
       <div class="seg-card rv rp" onclick="openSeg(4)"><div class="seg-emoji">&#127818;</div><div class="seg-name">L&rsquo;&Eacute;nergique<br>Pop</div><div class="seg-age">18+ &middot; temp&eacute;rament</div></div>
     </div>
     <div id="seg-ph" class="seg-placeholder">&larr; Clique sur un profil pour voir le d&eacute;tail</div>
-    <!-- Panel 0 -->
-    <div id="sp-0" class="seg-panel" style="background:#FF4FA3">
-      <div class="sp-top"><div class="sp-big-emoji">&#127853;</div><div><div class="sp-title" style="color:#09070A">La Pop<br>Curieuse</div><div class="sp-hook" style="color:#09070A">&ldquo;Tu joues d&eacute;j&agrave;.<br>On veut ta l&eacute;g&egrave;ret&eacute;.&rdquo;</div></div></div>
-      <div class="sp-body">
-        <div><p class="sp-pitch" style="color:#09070A">Tu n&rsquo;as pas besoin qu&rsquo;on t&rsquo;explique comment poser &mdash; tu le fais d&eacute;j&agrave;. Shooting en lingerie color&eacute;e, mises en sc&egrave;ne pop, jeu avec le regard&nbsp;: c&rsquo;est toi le c&oelig;ur de Crousti FR. On cherche ta l&eacute;g&egrave;ret&eacute;, pas ta perfection.</p><div class="sp-not"><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#09070A">Pas pour les profils dark, dramatiques ou qui posent en mode catalogue sans vie.</p></div></div>
-        <div><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#FF4FA3">&Agrave; l&rsquo;aise en lingerie</span><span class="tag-t" style="color:#FF4FA3">Mise en sc&egrave;ne instinctive</span><span class="tag-t" style="color:#FF4FA3">Look soign&eacute; naturellement</span><span class="tag-t" style="color:#FF4FA3">Aime jouer avec la cam&eacute;ra</span></div><br><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#09070A;border-color:#09070A">Dr&ocirc;le d&rsquo;Envie</span><span class="tag-f" style="color:#09070A;border-color:#09070A">Le Menu Crousti</span><span class="tag-f" style="color:#09070A;border-color:#09070A">Crousti Talons</span></div></div>
-      </div>
-      <div class="sp-footer"><button class="btn-sp" style="color:#FF4FA3" onclick="goTo('postuler')">Postuler comme La Pop Curieuse &rarr;</button></div>
-    </div>
-    <!-- Panel 1 -->
-    <div id="sp-1" class="seg-panel" style="background:#8B3DFF">
-      <div class="sp-top"><div class="sp-big-emoji">&#128139;</div><div><div class="sp-title" style="color:#FFF1D6">L&rsquo;Attitude<br>Assum&eacute;e</div><div class="sp-hook" style="color:#FFF1D6">&ldquo;Ton corps.<br>Ton territoire.<br>Tu sais.&rdquo;</div></div></div>
-      <div class="sp-body">
-        <div><p class="sp-pitch" style="color:#FFF1D6">On cherche cette fa&ccedil;on d&rsquo;&ecirc;tre dans le cadre sans l&rsquo;expliquer &mdash; le talon pos&eacute; comme une signature, le regard qui ne demande rien. &Agrave; 35, 40 ou 45 ans cette pr&eacute;sence est souvent plus forte qu&rsquo;&agrave; 20. Pas malgr&eacute; l&rsquo;&acirc;ge. Gr&acirc;ce &agrave; lui.</p><div class="sp-not"><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#FFF1D6">Pas pour les postures &ldquo;domination froide&rdquo; ou glac&eacute;e. Ce profil joue l&rsquo;assurance incarn&eacute;e, pas la provocation calcul&eacute;e.</p></div></div>
-        <div><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#8B3DFF">Porte des talons naturellement</span><span class="tag-t" style="color:#8B3DFF">Pose sans directive</span><span class="tag-t" style="color:#8B3DFF">Regard cam&eacute;ra ancr&eacute;</span><span class="tag-t" style="color:#8B3DFF">Corps habit&eacute; pas subi</span></div><br><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Crousti Talons</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Clac Club</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">After Crousti</span></div></div>
-      </div>
-      <div class="sp-footer"><button class="btn-sp" style="color:#8B3DFF" onclick="goTo('postuler')">Postuler comme L&rsquo;Attitude Assum&eacute;e &rarr;</button></div>
-    </div>
-    <!-- Panel 2 -->
-    <div id="sp-2" class="seg-panel" style="background:#1E7BFF">
-      <div class="sp-top"><div class="sp-big-emoji">&#127802;</div><div><div class="sp-title" style="color:#FFF1D6">La Complicit&eacute;<br>Ouverte</div><div class="sp-hook" style="color:#FFF1D6">&ldquo;Ce que tu es.<br>Pas ce que tu crois devoir &ecirc;tre.&rdquo;</div></div></div>
-      <div class="sp-body">
-        <div><p class="sp-pitch" style="color:#FFF1D6">Ce n&rsquo;est pas une case diversit&eacute; &mdash; c&rsquo;est un profil &agrave; part enti&egrave;re. Shooting nu ou en lingerie, toutes morphologies, tous &acirc;ges. Ce qu&rsquo;on capture ici c&rsquo;est la chaleur vraie, la connivence spontan&eacute;e avec l&rsquo;objectif. &Ccedil;a ne se simule pas.</p><div class="sp-not"><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#FFF1D6">Ce profil n&rsquo;est pas une tol&eacute;rance. C&rsquo;est une force distincte. Pas pour celles qui posent en s&rsquo;excusant.</p></div></div>
-        <div><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#1E7BFF">Naturelle sans effort</span><span class="tag-t" style="color:#1E7BFF">Morphologie assum&eacute;e</span><span class="tag-t" style="color:#1E7BFF">Chaleur qui passe &agrave; l&rsquo;image</span><span class="tag-t" style="color:#1E7BFF">Fait vivre le cadre</span></div><br><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Pop Room</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Le Menu Crousti</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Curiosit&eacute;s FR</span></div></div>
-      </div>
-      <div class="sp-footer"><button class="btn-sp" style="color:#1E7BFF" onclick="goTo('postuler')">Postuler comme La Complicit&eacute; Ouverte &rarr;</button></div>
-    </div>
-    <!-- Panel 3 -->
-    <div id="sp-3" class="seg-panel" style="background:#E51D4E">
-      <div class="sp-top"><div class="sp-big-emoji">&#129419;</div><div><div class="sp-title" style="color:#FFF1D6">L&rsquo;Originale<br>D&eacute;cal&eacute;e</div><div class="sp-hook" style="color:#FFF1D6">&ldquo;Ton style te pr&eacute;c&egrave;de.<br>On veut le reste.&rdquo;</div></div></div>
-      <div class="sp-body">
-        <div><p class="sp-pitch" style="color:#FFF1D6">Tatouages couvrants, style ultra-personnel, esth&eacute;tique qui ne ressemble &agrave; rien d&rsquo;autre &mdash; c&rsquo;est exactement ce qu&rsquo;on cherche. On ne normalise pas ce que tu es. On en fait des shootings photo et vid&eacute;o qui sortent du lot.</p><div class="sp-not"><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#FFF1D6">Pas pour les profils qui veulent &ldquo;&ecirc;tre originaux&rdquo; sans ma&icirc;trise esth&eacute;tique r&eacute;elle. L&rsquo;univers doit &ecirc;tre l&agrave; avant le shooting.</p></div></div>
-        <div><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#E51D4E">Tatouages ou piercings assum&eacute;s</span><span class="tag-t" style="color:#E51D4E">Univers visuel propre</span><span class="tag-t" style="color:#E51D4E">D&eacute;teste le g&eacute;n&eacute;rique</span><span class="tag-t" style="color:#E51D4E">Style avant le corps</span></div><br><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Crousti Lab</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Curiosit&eacute;s FR</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Bonbon Noir</span></div></div>
-      </div>
-      <div class="sp-footer"><button class="btn-sp" style="color:#E51D4E" onclick="goTo('postuler')">Postuler comme L&rsquo;Originale D&eacute;cal&eacute;e &rarr;</button></div>
-    </div>
-    <!-- Panel 4 -->
-    <div id="sp-4" class="seg-panel" style="background:#FFD84D">
-      <div class="sp-top"><div class="sp-big-emoji">&#127818;</div><div><div class="sp-title" style="color:#09070A">L&rsquo;&Eacute;nergique<br>Pop</div><div class="sp-hook" style="color:#09070A">&ldquo;L&rsquo;ambiance tu la mets.<br>On la capte.&rdquo;</div></div></div>
-      <div class="sp-body">
-        <div><p class="sp-pitch" style="color:#09070A">Visage expressif, rire communicatif, corps en mouvement naturel. En shooting photo ou vid&eacute;o &eacute;rotique, l&rsquo;&eacute;nergie de plateau &ccedil;a change tout. Si tu entres dans une pi&egrave;ce et que l&rsquo;ambiance monte &mdash; c&rsquo;est toi qu&rsquo;on cherche.</p><div class="sp-not"><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#09070A">Pas pour les profils pos&eacute;s ou trop dans leur t&ecirc;te. L&rsquo;&eacute;nergie doit &ecirc;tre l&agrave; d&rsquo;entr&eacute;e, pas jou&eacute;e.</p></div></div>
-        <div><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#FFD84D">Visage qui s&rsquo;anime seul</span><span class="tag-t" style="color:#FFD84D">Rit pour de vrai</span><span class="tag-t" style="color:#FFD84D">Bouge avant qu&rsquo;on le demande</span><span class="tag-t" style="color:#FFD84D">Fait monter le plateau</span></div><br><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#09070A;border-color:#09070A">Pop Room</span><span class="tag-f" style="color:#09070A;border-color:#09070A">Dr&ocirc;le d&rsquo;Envie</span><span class="tag-f" style="color:#09070A;border-color:#09070A">Clac Club</span></div></div>
-      </div>
-      <div class="sp-footer"><button class="btn-sp" style="color:#FFD84D" onclick="goTo('postuler')">Postuler comme L&rsquo;&Eacute;nergique Pop &rarr;</button></div>
-    </div>
+    <div id="sp-0" class="seg-panel" style="background:#FF4FA3"><div class="sp-top"><div class="sp-big-emoji">&#127853;</div><div><div class="sp-title" style="color:#09070A">La Pop<br>Curieuse</div><div class="sp-hook" style="color:#09070A">&ldquo;Tu joues d&eacute;j&agrave;.<br>On veut ta l&eacute;g&egrave;ret&eacute;.&rdquo;</div></div></div><div class="sp-body"><div><p class="sp-pitch" style="color:#09070A">Tu n&rsquo;as pas besoin qu&rsquo;on t&rsquo;explique comment poser &mdash; tu le fais d&eacute;j&agrave;. Shooting en lingerie color&eacute;e, mises en sc&egrave;ne pop, jeu avec le regard&nbsp;: c&rsquo;est toi le c&oelig;ur de Crousti FR. On cherche ta l&eacute;g&egrave;ret&eacute;, pas ta perfection.</p><div class="sp-not"><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#09070A">Pas pour les profils dark, dramatiques ou qui posent en mode catalogue sans vie.</p></div></div><div><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#FF4FA3">&Agrave; l&rsquo;aise en lingerie</span><span class="tag-t" style="color:#FF4FA3">Mise en sc&egrave;ne instinctive</span><span class="tag-t" style="color:#FF4FA3">Look soign&eacute; naturellement</span><span class="tag-t" style="color:#FF4FA3">Aime jouer avec la cam&eacute;ra</span></div><br><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#09070A;border-color:#09070A">Dr&ocirc;le d&rsquo;Envie</span><span class="tag-f" style="color:#09070A;border-color:#09070A">Le Menu Crousti</span><span class="tag-f" style="color:#09070A;border-color:#09070A">Crousti Talons</span></div></div></div><div class="sp-footer"><button class="btn-sp" style="color:#FF4FA3" onclick="goTo('postuler')">Postuler comme La Pop Curieuse &rarr;</button></div></div>
+    <div id="sp-1" class="seg-panel" style="background:#8B3DFF"><div class="sp-top"><div class="sp-big-emoji">&#128139;</div><div><div class="sp-title" style="color:#FFF1D6">L&rsquo;Attitude<br>Assum&eacute;e</div><div class="sp-hook" style="color:#FFF1D6">&ldquo;Ton corps.<br>Ton territoire.<br>Tu sais.&rdquo;</div></div></div><div class="sp-body"><div><p class="sp-pitch" style="color:#FFF1D6">On cherche cette fa&ccedil;on d&rsquo;&ecirc;tre dans le cadre sans l&rsquo;expliquer &mdash; le talon pos&eacute; comme une signature, le regard qui ne demande rien. &Agrave; 35, 40 ou 45 ans cette pr&eacute;sence est souvent plus forte qu&rsquo;&agrave; 20. Pas malgr&eacute; l&rsquo;&acirc;ge. Gr&acirc;ce &agrave; lui.</p><div class="sp-not"><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#FFF1D6">Pas pour les postures &ldquo;domination froide&rdquo; ou glac&eacute;e. Ce profil joue l&rsquo;assurance incarn&eacute;e, pas la provocation calcul&eacute;e.</p></div></div><div><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#8B3DFF">Porte des talons naturellement</span><span class="tag-t" style="color:#8B3DFF">Pose sans directive</span><span class="tag-t" style="color:#8B3DFF">Regard cam&eacute;ra ancr&eacute;</span><span class="tag-t" style="color:#8B3DFF">Corps habit&eacute; pas subi</span></div><br><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Crousti Talons</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Clac Club</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">After Crousti</span></div></div></div><div class="sp-footer"><button class="btn-sp" style="color:#8B3DFF" onclick="goTo('postuler')">Postuler comme L&rsquo;Attitude Assum&eacute;e &rarr;</button></div></div>
+    <div id="sp-2" class="seg-panel" style="background:#1E7BFF"><div class="sp-top"><div class="sp-big-emoji">&#127802;</div><div><div class="sp-title" style="color:#FFF1D6">La Complicit&eacute;<br>Ouverte</div><div class="sp-hook" style="color:#FFF1D6">&ldquo;Ce que tu es.<br>Pas ce que tu crois devoir &ecirc;tre.&rdquo;</div></div></div><div class="sp-body"><div><p class="sp-pitch" style="color:#FFF1D6">Ce n&rsquo;est pas une case diversit&eacute; &mdash; c&rsquo;est un profil &agrave; part enti&egrave;re. Shooting nu ou en lingerie, toutes morphologies, tous &acirc;ges. Ce qu&rsquo;on capture ici c&rsquo;est la chaleur vraie, la connivence spontan&eacute;e avec l&rsquo;objectif. &Ccedil;a ne se simule pas.</p><div class="sp-not"><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#FFF1D6">Ce profil n&rsquo;est pas une tol&eacute;rance. C&rsquo;est une force distincte. Pas pour celles qui posent en s&rsquo;excusant.</p></div></div><div><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#1E7BFF">Naturelle sans effort</span><span class="tag-t" style="color:#1E7BFF">Morphologie assum&eacute;e</span><span class="tag-t" style="color:#1E7BFF">Chaleur qui passe &agrave; l&rsquo;image</span><span class="tag-t" style="color:#1E7BFF">Fait vivre le cadre</span></div><br><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Pop Room</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Le Menu Crousti</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Curiosit&eacute;s FR</span></div></div></div><div class="sp-footer"><button class="btn-sp" style="color:#1E7BFF" onclick="goTo('postuler')">Postuler comme La Complicit&eacute; Ouverte &rarr;</button></div></div>
+    <div id="sp-3" class="seg-panel" style="background:#E51D4E"><div class="sp-top"><div class="sp-big-emoji">&#129419;</div><div><div class="sp-title" style="color:#FFF1D6">L&rsquo;Originale<br>D&eacute;cal&eacute;e</div><div class="sp-hook" style="color:#FFF1D6">&ldquo;Ton style te pr&eacute;c&egrave;de.<br>On veut le reste.&rdquo;</div></div></div><div class="sp-body"><div><p class="sp-pitch" style="color:#FFF1D6">Tatouages couvrants, style ultra-personnel, esth&eacute;tique qui ne ressemble &agrave; rien d&rsquo;autre &mdash; c&rsquo;est exactement ce qu&rsquo;on cherche. On ne normalise pas ce que tu es. On en fait des shootings photo et vid&eacute;o qui sortent du lot.</p><div class="sp-not"><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#FFF1D6">Pas pour les profils qui veulent &ldquo;&ecirc;tre originaux&rdquo; sans ma&icirc;trise esth&eacute;tique r&eacute;elle. L&rsquo;univers doit &ecirc;tre l&agrave; avant le shooting.</p></div></div><div><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#E51D4E">Tatouages ou piercings assum&eacute;s</span><span class="tag-t" style="color:#E51D4E">Univers visuel propre</span><span class="tag-t" style="color:#E51D4E">D&eacute;teste le g&eacute;n&eacute;rique</span><span class="tag-t" style="color:#E51D4E">Style avant le corps</span></div><br><span class="slbl" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Crousti Lab</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Curiosit&eacute;s FR</span><span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Bonbon Noir</span></div></div></div><div class="sp-footer"><button class="btn-sp" style="color:#E51D4E" onclick="goTo('postuler')">Postuler comme L&rsquo;Originale D&eacute;cal&eacute;e &rarr;</button></div></div>
+    <div id="sp-4" class="seg-panel" style="background:#FFD84D"><div class="sp-top"><div class="sp-big-emoji">&#127818;</div><div><div class="sp-title" style="color:#09070A">L&rsquo;&Eacute;nergique<br>Pop</div><div class="sp-hook" style="color:#09070A">&ldquo;L&rsquo;ambiance tu la mets.<br>On la capte.&rdquo;</div></div></div><div class="sp-body"><div><p class="sp-pitch" style="color:#09070A">Visage expressif, rire communicatif, corps en mouvement naturel. En shooting photo ou vid&eacute;o &eacute;rotique, l&rsquo;&eacute;nergie de plateau &ccedil;a change tout. Si tu entres dans une pi&egrave;ce et que l&rsquo;ambiance monte &mdash; c&rsquo;est toi qu&rsquo;on cherche.</p><div class="sp-not"><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Ce que ce n&rsquo;est pas</span><p class="sp-not-txt" style="color:#09070A">Pas pour les profils pos&eacute;s ou trop dans leur t&ecirc;te. L&rsquo;&eacute;nergie doit &ecirc;tre l&agrave; d&rsquo;entr&eacute;e, pas jou&eacute;e.</p></div></div><div><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes traits</span><div class="sp-tags"><span class="tag-t" style="color:#FFD84D">Visage qui s&rsquo;anime seul</span><span class="tag-t" style="color:#FFD84D">Rit pour de vrai</span><span class="tag-t" style="color:#FFD84D">Bouge avant qu&rsquo;on le demande</span><span class="tag-t" style="color:#FFD84D">Fait monter le plateau</span></div><br><span class="slbl" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes formats</span><div class="sp-tags"><span class="tag-f" style="color:#09070A;border-color:#09070A">Pop Room</span><span class="tag-f" style="color:#09070A;border-color:#09070A">Dr&ocirc;le d&rsquo;Envie</span><span class="tag-f" style="color:#09070A;border-color:#09070A">Clac Club</span></div></div></div><div class="sp-footer"><button class="btn-sp" style="color:#FFD84D" onclick="goTo('postuler')">Postuler comme L&rsquo;&Eacute;nergique Pop &rarr;</button></div></div>
   </div>
 </section>
 <section id="manifeste">
@@ -381,22 +307,7 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
   <div class="step rv rl" style="background:#E51D4E"><div class="step-num" style="color:rgba(255,241,214,.12)">05</div><div class="step-icon">&#9989;</div><div class="step-title" style="color:#FFF1D6">Tu valides tout</div><p class="step-desc" style="color:rgba(255,241,214,.8)">Chaque image te passe par les mains avant publication.</p></div>
   <div class="step rv rr" style="background:#09070A"><div class="step-num" style="color:rgba(255,79,163,.4)">06</div><div class="step-icon">&#128184;</div><div class="step-title" style="color:#FF4FA3">Pay&eacute;e sous 48h</div><p class="step-desc" style="color:rgba(255,241,214,.55)">Tarif fix&eacute; &agrave; l&rsquo;avance. Rien ne bouge sans accord &eacute;crit.</p></div>
 </div>
-<div class="ticker ticker-violet">
-  <div class="ticker-track">
-    <span class="ticker-item">&#128196; CONTRAT AVANT TOUT</span>
-    <span class="ticker-item">&#128274; ANONYMAT GARANTI</span>
-    <span class="ticker-item">&#128184; PAY&Eacute;E SOUS 48H</span>
-    <span class="ticker-item">&#9989; TU VALIDES TOUT</span>
-    <span class="ticker-item">&#128721; DROIT DE RETRAIT</span>
-    <span class="ticker-item">&#129309; RELATION LONG TERME</span>
-    <span class="ticker-item">&#128196; CONTRAT AVANT TOUT</span>
-    <span class="ticker-item">&#128274; ANONYMAT GARANTI</span>
-    <span class="ticker-item">&#128184; PAY&Eacute;E SOUS 48H</span>
-    <span class="ticker-item">&#9989; TU VALIDES TOUT</span>
-    <span class="ticker-item">&#128721; DROIT DE RETRAIT</span>
-    <span class="ticker-item">&#129309; RELATION LONG TERME</span>
-  </div>
-</div>
+<div class="ticker ticker-violet"><div class="ticker-track"><span class="ticker-item">&#128196; CONTRAT AVANT TOUT</span><span class="ticker-item">&#128274; ANONYMAT GARANTI</span><span class="ticker-item">&#128184; PAY&Eacute;E SOUS 48H</span><span class="ticker-item">&#9989; TU VALIDES TOUT</span><span class="ticker-item">&#128721; DROIT DE RETRAIT</span><span class="ticker-item">&#129309; RELATION LONG TERME</span><span class="ticker-item">&#128196; CONTRAT AVANT TOUT</span><span class="ticker-item">&#128274; ANONYMAT GARANTI</span><span class="ticker-item">&#128184; PAY&Eacute;E SOUS 48H</span><span class="ticker-item">&#9989; TU VALIDES TOUT</span><span class="ticker-item">&#128721; DROIT DE RETRAIT</span><span class="ticker-item">&#129309; RELATION LONG TERME</span></div></div>
 <section id="garanties">
   <div class="gar-wrap">
     <div class="gar-hdr rv"><div><span class="slbl" style="color:rgba(9,7,10,.6)">Tes garanties</span><h2 class="gar-h2">Ce qu&rsquo;on te garantit.<br><span>Sans exception.</span></h2></div><p class="gar-sub">Pas des arguments marketing &mdash; les conditions de base.</p></div>
@@ -438,10 +349,7 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
 </section>
 <section id="postuler">
   <div class="form-wrap">
-    <div class="form-top rv">
-      <div><span class="slbl" style="color:rgba(255,241,214,.6)">Candidature</span><h2 class="form-h2">Pr&ecirc;te &agrave;<br>nous rejoindre&nbsp;?</h2></div>
-      <div class="form-badge"><span>&#128160;</span><small>R&eacute;ponse<br>48h</small></div>
-    </div>
+    <div class="form-top rv"><div><span class="slbl" style="color:rgba(255,241,214,.6)">Candidature</span><h2 class="form-h2">Pr&ecirc;te &agrave;<br>nous rejoindre&nbsp;?</h2></div><div class="form-badge"><span>&#128160;</span><small>R&eacute;ponse<br>48h</small></div></div>
     <p class="form-intro">Aucune photo requise &agrave; ce stade. Juste quelques infos pour qu&rsquo;on se connaisse.</p>
     <div class="form-ok" id="form-ok"><div class="ok-icon">&#128160;</div><h3>Candidature re&ccedil;ue&nbsp;!</h3><p>On revient vers toi dans les 48h. &Agrave; tr&egrave;s vite.</p></div>
     <div class="form-box" id="form-box">
@@ -461,13 +369,9 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
 </section>
 <footer>
   <div class="foot-logo"><b class="r">CROUSTI</b><b>FR</b><span class="logo-heel">&#128160;</span></div>
-  <div class="foot-links">
-    <a class="foot-link" href="#" target="_blank">Instagram</a>
-    <a class="foot-link" href="#" onclick="openML();return false;">Mentions l&eacute;gales</a>
-  </div>
+  <div class="foot-links"><a class="foot-link" href="#" target="_blank">Instagram</a><a class="foot-link" href="#" onclick="openML();return false;">Mentions l&eacute;gales</a></div>
   <span class="foot-18">18+</span>
 </footer>
-<!-- MODAL MENTIONS LEGALES -->
 <div class="ml-overlay" id="ml-overlay" onclick="if(event.target===this)closeML()">
   <div class="ml-box">
     <button class="ml-close" onclick="closeML()" aria-label="Fermer">&times;</button>
@@ -478,15 +382,15 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
     <hr class="ml-sep">
     <div class="ml-sec"><h2>2. Directeur de la publication</h2><p>JACQUELINE Arnaud Marc Thibault, responsable l&eacute;gal de l&rsquo;entreprise individuelle &eacute;ditrice du pr&eacute;sent site.</p></div>
     <hr class="ml-sep">
-    <div class="ml-sec"><h2>3. H&eacute;bergement</h2><p><strong>Netlify, Inc.</strong><br>512 2nd Street, Suite 200 &mdash; San Francisco, CA 94107, &Eacute;tats-Unis<br><a href="https://www.netlify.com" target="_blank">www.netlify.com</a></p></div>
+    <div class="ml-sec"><h2>3. H&eacute;bergement</h2><p><strong>GitHub, Inc.</strong> (filiale de Microsoft Corporation)<br>88 Colin P Kelly Jr Street &mdash; San Francisco, CA 94107, &Eacute;tats-Unis<br><a href="https://pages.github.com" target="_blank">pages.github.com</a></p></div>
     <hr class="ml-sep">
     <div class="ml-sec"><h2>4. Nature du contenu</h2><p>Ce site diffuse des informations relatives au recrutement de cr&eacute;atrices de contenu &eacute;rotique adulte (18+). L&rsquo;acc&egrave;s implique l&rsquo;attestation explicite de majorit&eacute; l&eacute;gale. Conform&eacute;ment &agrave; l&rsquo;article 23 de la loi n&deg;2004-575 du 21 juin 2004 (LCEN), ce site contient des contenus destin&eacute;s aux adultes.</p></div>
     <hr class="ml-sep">
     <div class="ml-sec"><h2>5. Propri&eacute;t&eacute; intellectuelle</h2><p>L&rsquo;ensemble des contenus pr&eacute;sents sur ce site (textes, graphismes, logos, charte graphique) est prot&eacute;g&eacute; par le droit de la propri&eacute;t&eacute; intellectuelle et appartient exclusivement &agrave; JACQUELINE Arnaud Marc Thibault. Toute reproduction ou exploitation sans autorisation pr&eacute;alable &eacute;crite est interdite.</p></div>
     <hr class="ml-sep">
-    <div class="ml-sec"><h2>6. Donn&eacute;es personnelles &amp; RGPD</h2><p>Les donn&eacute;es collect&eacute;es via le formulaire (pr&eacute;nom/pseudo, &acirc;ge, e-mail, zone g&eacute;ographique, motivation) sont utilis&eacute;es exclusivement pour le traitement des candidatures et ne sont jamais c&eacute;d&eacute;es &agrave; des tiers.</p><ul><li><strong>Responsable du traitement&nbsp;:</strong> JACQUELINE Arnaud Marc Thibault</li><li><strong>Finalit&eacute;&nbsp;:</strong> gestion des candidatures cr&eacute;atrices</li><li><strong>Dur&eacute;e de conservation&nbsp;:</strong> 2 ans &agrave; compter de la derni&egrave;re interaction</li><li><strong>Droits&nbsp;:</strong> acc&egrave;s, rectification, suppression, portabilit&eacute; &mdash; par e-mail aupr&egrave;s de l&rsquo;&eacute;diteur</li><li><strong>Fondement l&eacute;gal&nbsp;:</strong> consentement explicite (RGPD art. 6-1-a)</li></ul><p style="margin-top:.6rem">Conform&eacute;ment &agrave; la loi Informatique et Libert&eacute;s modifi&eacute;e et au RGPD (UE) 2016/679, vous disposez d&rsquo;un droit d&rsquo;acc&egrave;s, de rectification et de suppression de vos donn&eacute;es.</p></div>
+    <div class="ml-sec"><h2>6. Donn&eacute;es personnelles &amp; RGPD</h2><p>Les donn&eacute;es collect&eacute;es via le formulaire sont utilis&eacute;es exclusivement pour le traitement des candidatures et ne sont jamais c&eacute;d&eacute;es &agrave; des tiers.</p><ul><li><strong>Responsable du traitement&nbsp;:</strong> JACQUELINE Arnaud Marc Thibault</li><li><strong>Finalit&eacute;&nbsp;:</strong> gestion des candidatures cr&eacute;atrices</li><li><strong>Dur&eacute;e de conservation&nbsp;:</strong> 2 ans &agrave; compter de la derni&egrave;re interaction</li><li><strong>Droits&nbsp;:</strong> acc&egrave;s, rectification, suppression, portabilit&eacute; &mdash; par e-mail aupr&egrave;s de l&rsquo;&eacute;diteur</li><li><strong>Fondement l&eacute;gal&nbsp;:</strong> consentement explicite (RGPD art. 6-1-a)</li></ul><p style="margin-top:.6rem">Conform&eacute;ment &agrave; la loi Informatique et Libert&eacute;s modifi&eacute;e et au RGPD (UE) 2016/679, vous disposez d&rsquo;un droit d&rsquo;acc&egrave;s, de rectification et de suppression de vos donn&eacute;es.</p></div>
     <hr class="ml-sep">
-    <div class="ml-sec"><h2>7. Cookies</h2><p>Ce site n&rsquo;utilise pas de cookies de tra&ccedil;age ou de mesure d&rsquo;audience. Aucun cookie tiers n&rsquo;est d&eacute;pos&eacute; lors de votre navigation.</p></div>
+    <div class="ml-sec"><h2>7. Cookies</h2><p>Ce site utilise un cookie technique pour m&eacute;moriser votre v&eacute;rification d&rsquo;&acirc;ge. Aucun cookie de tra&ccedil;age ou tiers n&rsquo;est utilis&eacute;.</p></div>
     <hr class="ml-sep">
     <div class="ml-sec"><h2>8. Limitation de responsabilit&eacute;</h2><p>L&rsquo;&eacute;diteur ne saurait &ecirc;tre tenu responsable des dommages directs ou indirects r&eacute;sultant de l&rsquo;utilisation de ce site. Les informations pr&eacute;sentes sont fournies &agrave; titre indicatif et peuvent &ecirc;tre modifi&eacute;es &agrave; tout moment.</p></div>
     <hr class="ml-sep">
@@ -495,37 +399,15 @@ footer{background:var(--noir);border-top:4px solid var(--rose);padding:1.8rem 2r
   </div>
 </div>
 <script>
+(function(){var g=document.getElementById('age-gate');if(localStorage.crousti){g.style.display='none';}else{document.body.style.overflow='hidden';}})();
+function ageConfirm(){localStorage.crousti=1;var g=document.getElementById('age-gate');g.style.opacity=0;setTimeout(function(){g.style.display='none';document.body.style.overflow='';},500);}
+function ageRefuse(){location.replace('https://www.google.com');}
 function goTo(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'})}
 var curSeg=null;
-function openSeg(i){
-  var cards=document.querySelectorAll('.seg-card');
-  var panels=document.querySelectorAll('.seg-panel');
-  var ph=document.getElementById('seg-ph');
-  if(curSeg===i){cards[i].classList.remove('active');panels[i].classList.remove('show');ph.style.display='';curSeg=null;return}
-  if(curSeg!==null){cards[curSeg].classList.remove('active');panels[curSeg].classList.remove('show')}
-  curSeg=i;cards[i].classList.add('active');panels[i].classList.add('show');ph.style.display='none';
-  panels[i].scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-function faqToggle(btn){
-  var item=btn.parentElement;var icon=btn.querySelector('.faq-icon');var isOpen=item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.faq-icon').textContent='+'});
-  if(!isOpen){item.classList.add('open');icon.textContent='\u2212'}
-}
+function openSeg(i){var cards=document.querySelectorAll('.seg-card');var panels=document.querySelectorAll('.seg-panel');var ph=document.getElementById('seg-ph');if(curSeg===i){cards[i].classList.remove('active');panels[i].classList.remove('show');ph.style.display='';curSeg=null;return}if(curSeg!==null){cards[curSeg].classList.remove('active');panels[curSeg].classList.remove('show')}curSeg=i;cards[i].classList.add('active');panels[i].classList.add('show');ph.style.display='none';panels[i].scrollIntoView({behavior:'smooth',block:'nearest'});}
+function faqToggle(btn){var item=btn.parentElement;var icon=btn.querySelector('.faq-icon');var isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.faq-icon').textContent='+'});if(!isOpen){item.classList.add('open');icon.textContent='\u2212'}}
 var SCRIPT_URL='REMPLACER_PAR_TON_URL_APPS_SCRIPT';
-function sendForm(){
-  var prenom=document.getElementById('f-prenom').value.trim();
-  var age=document.getElementById('f-age').value.trim();
-  var email=document.getElementById('f-email').value.trim();
-  var profil=document.getElementById('f-profil').value;
-  var zone=document.getElementById('f-zone').value.trim();
-  var motiv=document.getElementById('f-motiv').value.trim();
-  var errEl=document.getElementById('form-err');
-  var btn=document.getElementById('btn-sub');
-  document.querySelectorAll('.form-ctrl').forEach(function(el){el.classList.remove('err')});
-  if(!prenom||!age||!email){errEl.classList.add('show');if(!prenom)document.getElementById('f-prenom').classList.add('err');if(!age)document.getElementById('f-age').classList.add('err');if(!email)document.getElementById('f-email').classList.add('err');return}
-  errEl.classList.remove('show');btn.disabled=true;btn.textContent='Envoi en cours...';
-  fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({date:new Date().toLocaleString('fr-FR'),prenom:prenom,age:age,profil:profil,zone:zone,email:email,motivation:motiv})}).catch(function(){}).finally(function(){document.getElementById('form-box').style.display='none';document.getElementById('form-ok').classList.add('show')});
-}
+function sendForm(){var prenom=document.getElementById('f-prenom').value.trim();var age=document.getElementById('f-age').value.trim();var email=document.getElementById('f-email').value.trim();var profil=document.getElementById('f-profil').value;var zone=document.getElementById('f-zone').value.trim();var motiv=document.getElementById('f-motiv').value.trim();var errEl=document.getElementById('form-err');var btn=document.getElementById('btn-sub');document.querySelectorAll('.form-ctrl').forEach(function(el){el.classList.remove('err')});if(!prenom||!age||!email){errEl.classList.add('show');if(!prenom)document.getElementById('f-prenom').classList.add('err');if(!age)document.getElementById('f-age').classList.add('err');if(!email)document.getElementById('f-email').classList.add('err');return}errEl.classList.remove('show');btn.disabled=true;btn.textContent='Envoi en cours...';fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({date:new Date().toLocaleString('fr-FR'),prenom:prenom,age:age,profil:profil,zone:zone,email:email,motivation:motiv})}).catch(function(){}).finally(function(){document.getElementById('form-box').style.display='none';document.getElementById('form-ok').classList.add('show')});}
 function openML(){document.getElementById('ml-overlay').classList.add('open');document.body.style.overflow='hidden'}
 function closeML(){document.getElementById('ml-overlay').classList.remove('open');document.body.style.overflow=''}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeML()});
