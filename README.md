@@ -1,43 +1,26 @@
 # Crousti FR – Espace Créatrices 18+
 
-Site vitrine de recrutement pour créatrices de contenu.
-
 ## Arborescence
 
 ```
-crousti-fr/
-├── index.html          ← Page principale (HTML)
+/
+├── index.html        ← Page principale
 ├── css/
-│   └── style.css       ← Tous les styles (variables, animations, sections)
+│   └── style.css     ← Tous les styles
 ├── js/
-│   └── main.js         ← Logique JS (données, composants, formulaire, scroll reveal)
+│   └── main.js       ← Logique JavaScript
 ├── assets/
-│   └── hero.jpg        ← Image héro (à ajouter manuellement)
+│   └── hero.jpg      ← Ajouter l'image héro ici
 └── README.md
 ```
 
-## Déploiement sur GitHub Pages
+## Déploiement GitHub Pages
 
-1. Créer un dépôt GitHub (ex: `crousti-fr`)
-2. Pousser ces fichiers à la racine du dépôt
-3. Aller dans **Settings → Pages** et sélectionner la branche `main`
-4. Le site sera accessible à `https://<ton-pseudo>.github.io/crousti-fr/`
+1. Uploader ces fichiers **directement à la racine** du dépôt
+2. Settings → Pages → Source : branche `main`, dossier `/root`
+3. Site dispo sur `https://<pseudo>.github.io/<repo>/`
 
 ## Image héro
 
-Ajoute ton image sous `assets/hero.jpg` et mets à jour la référence dans `index.html` :
-
-```html
-<img src="assets/hero.jpg" alt="Crousti FR modèle" ... />
-```
-
-## Sections du site
-
-- **Hero** – Accroche principale avec bandes colorées
-- **Profils** – Sélecteur de segments (débutante, digitale, locale, senior, voyageuse)
-- **Manifeste** – Texte de présentation de la marque
-- **Process** – Les 6 étapes pour rejoindre Crousti FR
-- **Garanties** – Les engagements de la plateforme
-- **Témoignages** – Avis de créatrices
-- **FAQ** – Questions fréquentes
-- **Postuler** – Formulaire de candidature
+Ajouter `hero.jpg` dans `assets/` puis mettre à jour dans `index.html` :
+`<img src="assets/hero.jpg" ...>`

@@ -1,256 +1,687 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crousti FR – Espace Créatrices 18+</title>
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crousti FR – Espace Créatrices 18+</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 </head>
 <body>
 
-  <!-- ══ HEADER ══════════════════════════════════════════════════════════════ -->
-  <header>
-    <div class="logo">
-      <span class="logo-crousti">CROUSTI</span>
-      <span class="logo-fr">FR</span>
-      <span class="logo-heel">👠</span>
-    </div>
-    <nav>
-      <button class="nav-link" onclick="scrollTo('profils')">Mon profil</button>
-      <button class="nav-link" onclick="scrollTo('garanties')">Garanties</button>
-      <button class="nav-cta"  onclick="scrollTo('postuler')">Postuler</button>
-    </nav>
-  </header>
+<!-- ══ HEADER ══════════════════════════════════════════════════════════════ -->
+<header>
+  <div class="logo">
+    <b class="r">CROUSTI</b>
+    <b>FR</b>
+    <span class="logo-heel">👠</span>
+  </div>
+  <nav>
+    <button class="nav-btn" onclick="goto('profils')">Mon profil</button>
+    <button class="nav-btn" onclick="goto('garanties')">Garanties</button>
+    <button class="nav-cta" onclick="goto('postuler')">Postuler</button>
+  </nav>
+</header>
 
-  <!-- ══ HERO ════════════════════════════════════════════════════════════════ -->
-  <section id="hero">
-    <div class="hero-bg">
-      <!-- Image hero : remplace src par l'URL de ton image hébergée -->
-      <div class="hero-img-wrap" id="hero-img-wrap">
-        <img src="hero.jpg" alt="Crousti FR modèle" onerror="this.parentElement.style.display='none'" />
-        <div class="hero-img-fade"></div>
-        <div class="hero-img-veil"></div>
-      </div>
-      <div class="band-rose"></div>
-      <div class="band-violet"></div>
-      <div class="band-jaune"></div>
-      <div class="deco-sq1"></div>
-      <div class="deco-sq2"></div>
-      <div class="deco-sq3"></div>
+<!-- ══ HERO ════════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg">
+    <!-- Image : place hero.jpg dans le même dossier que index.html -->
+    <div class="hero-img">
+      <img src="hero.jpg" alt="Crousti FR modèle" onerror="this.parentElement.style.display='none'">
+      <div class="hero-img-fade"></div>
+      <div class="hero-img-veil"></div>
     </div>
-    <div class="hero-badge">
+    <div class="band band-r"></div>
+    <div class="band band-v"></div>
+    <div class="band band-j"></div>
+    <div class="deco d1"></div>
+    <div class="deco d2"></div>
+    <div class="deco d3"></div>
+  </div>
+  <div class="hero-badge">
+    <p>Recrutement</p>
+    <strong>OUVERT</strong>
+    <span>👠</span>
+  </div>
+  <div class="hero-content">
+    <div class="hero-overline">
+      <div class="overline-bar"></div>
+      <span class="overline-txt">Crousti FR · Espace créatrices · 18+</span>
+    </div>
+    <h1 class="hero-h1">
+      <span class="hw-wrap"><span class="hw">L'ATTITUDE</span></span>
+      <span class="hw-wrap"><span class="hw rose">PRIME</span></span>
+      <span class="hw-wrap"><span class="hw">SUR TOUT.</span></span>
+    </h1>
+    <p class="hero-sub">
+      Crousti FR ne cherche pas un type de corps. On cherche une énergie, une curiosité, une façon d'être dans le cadre. Pop, coloré, décomplexé.
+    </p>
+    <div class="hero-ctas">
+      <button class="btn-primary" onclick="goto('profils')">Trouver mon profil 👠</button>
+      <button class="btn-ghost"   onclick="goto('postuler')">Postuler →</button>
+    </div>
+    <div class="hero-pills">
+      <span class="pill pill-c">📄 Contrat avant tout</span>
+      <span class="pill pill-v">🔒 Anonymat possible</span>
+      <span class="pill pill-j">💸 Payée sous 48h</span>
+      <span class="pill pill-r">✅ Tu valides tout</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TICKER 1 ═════════════════════════════════════════════════════════════ -->
+<div class="ticker ticker-rose">
+  <div class="ticker-track">
+    <span class="ticker-item">🌸 LA POP CURIEUSE</span>
+    <span class="ticker-item">👠 L'ATTITUDE ASSUMÉE</span>
+    <span class="ticker-item">🤝 LA COMPLICITÉ OUVERTE</span>
+    <span class="ticker-item">🔮 L'ORIGINALE DÉCALÉE</span>
+    <span class="ticker-item">⚡ L'ÉNERGIQUE POP</span>
+    <span class="ticker-item">🌸 LA POP CURIEUSE</span>
+    <span class="ticker-item">👠 L'ATTITUDE ASSUMÉE</span>
+    <span class="ticker-item">🤝 LA COMPLICITÉ OUVERTE</span>
+    <span class="ticker-item">🔮 L'ORIGINALE DÉCALÉE</span>
+    <span class="ticker-item">⚡ L'ÉNERGIQUE POP</span>
+  </div>
+</div>
+
+<!-- ══ PROFILS ══════════════════════════════════════════════════════════════ -->
+<section id="profils">
+  <div class="profils-wrap">
+    <div class="profils-hdr rv rl">
       <div>
-        <div class="hero-badge-label">Recrutement</div>
-        <div class="hero-badge-open">OUVERT</div>
-        <div>👠</div>
+        <span class="slabel" style="color:var(--rose)">5 profils recherchés</span>
+        <h2 class="profils-h2">Tu te reconnais<br><span>dans lequel ?</span></h2>
       </div>
+      <p class="profils-sub">Clique sur le profil qui te ressemble pour voir ce qu'on attend de toi.</p>
     </div>
-    <div class="hero-content">
-      <div class="hero-overline">
-        <div class="overline-bar"></div>
-        <span class="overline-text">Crousti FR · Espace créatrices · 18+</span>
-      </div>
-      <h1 class="hero-h1">
-        <span class="hero-word"><span class="hero-word-inner">L'ATTITUDE</span></span>
-        <span class="hero-word"><span class="hero-word-inner rose">PRIME</span></span>
-        <span class="hero-word"><span class="hero-word-inner">SUR TOUT.</span></span>
-      </h1>
-      <p class="hero-sub">
-        Crousti FR ne cherche pas un type de corps. On cherche une énergie, une curiosité, une façon d'être dans le cadre. Pop, coloré, décomplexé.
-      </p>
-      <div class="hero-ctas">
-        <button class="btn-primary" onclick="scrollTo('profils')">Trouver mon profil 👠</button>
-        <button class="btn-ghost"   onclick="scrollTo('postuler')">Postuler →</button>
-      </div>
-      <div class="hero-pills">
-        <span class="pill pill-creme">📄 Contrat avant tout</span>
-        <span class="pill pill-violet">🔒 Anonymat possible</span>
-        <span class="pill pill-jaune">💸 Payée sous 48h</span>
-        <span class="pill pill-rose">✅ Tu valides tout</span>
-      </div>
-    </div>
-  </section>
 
-  <!-- ══ TICKER 1 ═════════════════════════════════════════════════════════════ -->
-  <div class="ticker ticker-rose">
-    <div class="ticker-track" id="ticker1"></div>
+    <!-- 5 cartes -->
+    <div class="seg-cards">
+      <div class="seg-card rv rp" data-seg="0" onclick="openSeg(0)">
+        <div class="seg-emoji">🍭</div>
+        <div class="seg-name">La Pop<br>Curieuse</div>
+        <div class="seg-age">18 – 30 ans</div>
+      </div>
+      <div class="seg-card rv rp" data-seg="1" onclick="openSeg(1)">
+        <div class="seg-emoji">💋</div>
+        <div class="seg-name">L'Attitude<br>Assumée</div>
+        <div class="seg-age">25 ans et +</div>
+      </div>
+      <div class="seg-card rv rp" data-seg="2" onclick="openSeg(2)">
+        <div class="seg-emoji">🌺</div>
+        <div class="seg-name">La Complicité<br>Ouverte</div>
+        <div class="seg-age">18+ · tous âges</div>
+      </div>
+      <div class="seg-card rv rp" data-seg="3" onclick="openSeg(3)">
+        <div class="seg-emoji">🦋</div>
+        <div class="seg-name">L'Originale<br>Décalée</div>
+        <div class="seg-age">18+ · profil atypique</div>
+      </div>
+      <div class="seg-card rv rp" data-seg="4" onclick="openSeg(4)">
+        <div class="seg-emoji">🍒</div>
+        <div class="seg-name">L'Énergique<br>Pop</div>
+        <div class="seg-age">18+ · tempérament</div>
+      </div>
+    </div>
+
+    <!-- Placeholder -->
+    <div id="seg-placeholder" class="seg-placeholder">← Clique sur un profil pour voir le détail</div>
+
+    <!-- Panel 0 : La Pop Curieuse -->
+    <div id="seg-panel-0" class="seg-panel" style="background:#FF4FA3">
+      <div class="sp-top">
+        <div class="sp-emoji">🍭</div>
+        <div>
+          <div class="sp-title" style="color:#09070A">La Pop<br>Curieuse</div>
+          <div class="sp-hook" style="color:#09070A">"Tu joues déjà.<br>On veut ta légèreté."</div>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div>
+          <p class="sp-pitch" style="color:#09070A">Tu n'as pas besoin qu'on t'explique comment poser — tu le fais déjà. Shooting en lingerie colorée, mises en scène pop, jeu avec le regard : c'est toi le cœur de Crousti FR. On cherche ta légèreté, pas ta perfection.</p>
+          <div class="sp-not-box">
+            <span class="slabel" style="color:rgba(9,7,10,.55);font-size:.6rem">Ce que ce n'est pas</span>
+            <p class="sp-not-txt" style="color:#09070A">Pas pour les profils dark, dramatiques ou qui posent en mode catalogue sans vie.</p>
+          </div>
+        </div>
+        <div>
+          <span class="slabel" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes traits</span>
+          <div class="sp-tags">
+            <span class="tag-t" style="background:#09070A;color:#FF4FA3">À l'aise en lingerie</span>
+            <span class="tag-t" style="background:#09070A;color:#FF4FA3">Mise en scène instinctive</span>
+            <span class="tag-t" style="background:#09070A;color:#FF4FA3">Look soigné naturellement</span>
+            <span class="tag-t" style="background:#09070A;color:#FF4FA3">Aime jouer avec la caméra</span>
+          </div>
+          <br>
+          <span class="slabel" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes formats</span>
+          <div class="sp-tags">
+            <span class="tag-f" style="color:#09070A;border-color:#09070A">Drôle d'Envie</span>
+            <span class="tag-f" style="color:#09070A;border-color:#09070A">Le Menu Crousti</span>
+            <span class="tag-f" style="color:#09070A;border-color:#09070A">Crousti Talons</span>
+          </div>
+        </div>
+      </div>
+      <div class="sp-footer">
+        <button class="btn-sp-cta" style="color:#FF4FA3" onclick="goto('postuler')">Postuler comme La Pop Curieuse →</button>
+      </div>
+    </div>
+
+    <!-- Panel 1 : L'Attitude Assumée -->
+    <div id="seg-panel-1" class="seg-panel" style="background:#8B3DFF">
+      <div class="sp-top">
+        <div class="sp-emoji">💋</div>
+        <div>
+          <div class="sp-title" style="color:#FFF1D6">L'Attitude<br>Assumée</div>
+          <div class="sp-hook" style="color:#FFF1D6">"Ton corps.<br>Ton territoire.<br>Tu sais."</div>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div>
+          <p class="sp-pitch" style="color:#FFF1D6">On cherche cette façon d'être dans le cadre sans l'expliquer — le talon posé comme une signature, le regard qui ne demande rien. À 35, 40 ou 45 ans cette présence est souvent plus forte qu'à 20. Pas malgré l'âge. Grâce à lui.</p>
+          <div class="sp-not-box">
+            <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n'est pas</span>
+            <p class="sp-not-txt" style="color:#FFF1D6">Pas pour les postures "domination froide" ou glacée. Ce profil joue l'assurance incarnée, pas la provocation calculée.</p>
+          </div>
+        </div>
+        <div>
+          <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span>
+          <div class="sp-tags">
+            <span class="tag-t" style="background:#09070A;color:#8B3DFF">Porte des talons naturellement</span>
+            <span class="tag-t" style="background:#09070A;color:#8B3DFF">Pose sans directive</span>
+            <span class="tag-t" style="background:#09070A;color:#8B3DFF">Regard caméra ancré</span>
+            <span class="tag-t" style="background:#09070A;color:#8B3DFF">Corps habité pas subi</span>
+          </div>
+          <br>
+          <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span>
+          <div class="sp-tags">
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Crousti Talons</span>
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Clac Club</span>
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">After Crousti</span>
+          </div>
+        </div>
+      </div>
+      <div class="sp-footer">
+        <button class="btn-sp-cta" style="color:#8B3DFF" onclick="goto('postuler')">Postuler comme L'Attitude Assumée →</button>
+      </div>
+    </div>
+
+    <!-- Panel 2 : La Complicité Ouverte -->
+    <div id="seg-panel-2" class="seg-panel" style="background:#1E7BFF">
+      <div class="sp-top">
+        <div class="sp-emoji">🌺</div>
+        <div>
+          <div class="sp-title" style="color:#FFF1D6">La Complicité<br>Ouverte</div>
+          <div class="sp-hook" style="color:#FFF1D6">"Ce que tu es.<br>Pas ce que tu crois devoir être."</div>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div>
+          <p class="sp-pitch" style="color:#FFF1D6">Ce n'est pas une case diversité — c'est un profil à part entière. Shooting nu ou en lingerie, toutes morphologies, tous âges. Ce qu'on capture ici c'est la chaleur vraie, la connivence spontanée avec l'objectif. Ça ne se simule pas.</p>
+          <div class="sp-not-box">
+            <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n'est pas</span>
+            <p class="sp-not-txt" style="color:#FFF1D6">Ce profil n'est pas une tolérance. C'est une force distincte. Pas pour celles qui posent en s'excusant.</p>
+          </div>
+        </div>
+        <div>
+          <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span>
+          <div class="sp-tags">
+            <span class="tag-t" style="background:#09070A;color:#1E7BFF">Naturelle sans effort</span>
+            <span class="tag-t" style="background:#09070A;color:#1E7BFF">Morphologie assumée</span>
+            <span class="tag-t" style="background:#09070A;color:#1E7BFF">Chaleur qui passe à l'image</span>
+            <span class="tag-t" style="background:#09070A;color:#1E7BFF">Fait vivre le cadre</span>
+          </div>
+          <br>
+          <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span>
+          <div class="sp-tags">
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Pop Room</span>
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Le Menu Crousti</span>
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Curiosités FR</span>
+          </div>
+        </div>
+      </div>
+      <div class="sp-footer">
+        <button class="btn-sp-cta" style="color:#1E7BFF" onclick="goto('postuler')">Postuler comme La Complicité Ouverte →</button>
+      </div>
+    </div>
+
+    <!-- Panel 3 : L'Originale Décalée -->
+    <div id="seg-panel-3" class="seg-panel" style="background:#E51D4E">
+      <div class="sp-top">
+        <div class="sp-emoji">🦋</div>
+        <div>
+          <div class="sp-title" style="color:#FFF1D6">L'Originale<br>Décalée</div>
+          <div class="sp-hook" style="color:#FFF1D6">"Ton style te précède.<br>On veut le reste."</div>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div>
+          <p class="sp-pitch" style="color:#FFF1D6">Tatouages couvrants, style ultra-personnel, esthétique qui ne ressemble à rien d'autre — c'est exactement ce qu'on cherche. On ne normalise pas ce que tu es. On en fait des shootings photo et vidéo qui sortent du lot.</p>
+          <div class="sp-not-box">
+            <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Ce que ce n'est pas</span>
+            <p class="sp-not-txt" style="color:#FFF1D6">Pas pour les profils qui veulent "être originaux" sans maîtrise esthétique réelle. L'univers doit être là avant le shooting.</p>
+          </div>
+        </div>
+        <div>
+          <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes traits</span>
+          <div class="sp-tags">
+            <span class="tag-t" style="background:#09070A;color:#E51D4E">Tatouages ou piercings assumés</span>
+            <span class="tag-t" style="background:#09070A;color:#E51D4E">Univers visuel propre</span>
+            <span class="tag-t" style="background:#09070A;color:#E51D4E">Déteste le générique</span>
+            <span class="tag-t" style="background:#09070A;color:#E51D4E">Style avant le corps</span>
+          </div>
+          <br>
+          <span class="slabel" style="color:rgba(255,241,214,.55);font-size:.6rem">Tes formats</span>
+          <div class="sp-tags">
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Crousti Lab</span>
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Curiosités FR</span>
+            <span class="tag-f" style="color:#FFF1D6;border-color:#FFF1D6">Bonbon Noir</span>
+          </div>
+        </div>
+      </div>
+      <div class="sp-footer">
+        <button class="btn-sp-cta" style="color:#E51D4E" onclick="goto('postuler')">Postuler comme L'Originale Décalée →</button>
+      </div>
+    </div>
+
+    <!-- Panel 4 : L'Énergique Pop -->
+    <div id="seg-panel-4" class="seg-panel" style="background:#FFD84D">
+      <div class="sp-top">
+        <div class="sp-emoji">🍒</div>
+        <div>
+          <div class="sp-title" style="color:#09070A">L'Énergique<br>Pop</div>
+          <div class="sp-hook" style="color:#09070A">"L'ambiance tu la mets.<br>On la capte."</div>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div>
+          <p class="sp-pitch" style="color:#09070A">Visage expressif, rire communicatif, corps en mouvement naturel. En shooting photo ou vidéo érotique, l'énergie de plateau ça change tout. Si tu entres dans une pièce et que l'ambiance monte — c'est toi qu'on cherche.</p>
+          <div class="sp-not-box">
+            <span class="slabel" style="color:rgba(9,7,10,.55);font-size:.6rem">Ce que ce n'est pas</span>
+            <p class="sp-not-txt" style="color:#09070A">Pas pour les profils posés ou trop dans leur tête. L'énergie doit être là d'entrée, pas jouée.</p>
+          </div>
+        </div>
+        <div>
+          <span class="slabel" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes traits</span>
+          <div class="sp-tags">
+            <span class="tag-t" style="background:#09070A;color:#FFD84D">Visage qui s'anime seul</span>
+            <span class="tag-t" style="background:#09070A;color:#FFD84D">Rit pour de vrai</span>
+            <span class="tag-t" style="background:#09070A;color:#FFD84D">Bouge avant qu'on le demande</span>
+            <span class="tag-t" style="background:#09070A;color:#FFD84D">Fait monter le plateau</span>
+          </div>
+          <br>
+          <span class="slabel" style="color:rgba(9,7,10,.55);font-size:.6rem">Tes formats</span>
+          <div class="sp-tags">
+            <span class="tag-f" style="color:#09070A;border-color:#09070A">Pop Room</span>
+            <span class="tag-f" style="color:#09070A;border-color:#09070A">Drôle d'Envie</span>
+            <span class="tag-f" style="color:#09070A;border-color:#09070A">Clac Club</span>
+          </div>
+        </div>
+      </div>
+      <div class="sp-footer">
+        <button class="btn-sp-cta" style="color:#FFD84D" onclick="goto('postuler')">Postuler comme L'Énergique Pop →</button>
+      </div>
+    </div>
+
+  </div><!-- /profils-wrap -->
+</section>
+
+<!-- ══ MANIFESTE ════════════════════════════════════════════════════════════ -->
+<section id="manifeste">
+  <span class="man-deco">C</span>
+  <div class="man-inner rv">
+    <span class="slabel" style="color:var(--rose)">Notre état d'esprit</span>
+    <h2 class="man-h2">
+      Le désir n'a pas besoin<br>d'être sombre<br>
+      <span>pour être intense.</span>
+    </h2>
+    <p class="man-p">Crousti FR produit des photos et vidéos érotiques pour adultes. Du contenu assumé, esthétiquement soigné, tourné dans le respect total de chaque créatrice. Pas le cliché du secteur — quelque chose de plus curieux, de plus coloré, de plus humain.</p>
+    <p class="man-p">Nos tournages sont des espaces où le désir peut être drôle, inattendu, pop, tendre — toujours librement choisi. Jamais honteux. Jamais imposé.</p>
+    <p class="man-quote">Parce que la curiosité est une énergie. Et chez Crousti FR, elle porte des talons.</p>
+    <p class="man-p">Et cette curiosité n'a pas d'âge. À 40 ans, la façon d'être dans un cadre — d'y apporter quelque chose de vrai, d'ancré — ça ne s'invente pas. C'est exactement ce qu'on cherche.</p>
   </div>
+</section>
 
-  <!-- ══ PROFILS ══════════════════════════════════════════════════════════════ -->
-  <section id="profils">
-    <div class="profils-inner">
-      <div class="profils-header rv-left">
-        <div>
-          <span class="sec-label" style="color:var(--rose)">5 profils recherchés</span>
-          <h2 class="profils-h2">Tu te reconnais<br><span>dans lequel ?</span></h2>
-        </div>
-        <p class="profils-sub">Clique sur le profil qui te ressemble pour voir ce qu'on attend de toi.</p>
-      </div>
-      <div class="cards-grid" id="seg-cards"></div>
-      <div id="seg-detail-area">
-        <div class="seg-placeholder">← Clique sur un profil pour voir le détail</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ MANIFESTE ════════════════════════════════════════════════════════════ -->
-  <section id="manifeste">
-    <span class="manifeste-deco">C</span>
-    <div class="manifeste-inner rv-up">
-      <span class="sec-label" style="color:var(--rose)">Notre état d'esprit</span>
-      <h2 class="manifeste-h2">
-        Le désir n'a pas besoin<br>d'être sombre<br>
-        <span>pour être intense.</span>
-      </h2>
-      <p class="manifeste-p">Crousti FR produit des photos et vidéos érotiques pour adultes. Du contenu assumé, esthétiquement soigné, tourné dans le respect total de chaque créatrice. Pas le cliché du secteur — quelque chose de plus curieux, de plus coloré, de plus humain.</p>
-      <p class="manifeste-p">Nos tournages sont des espaces où le désir peut être drôle, inattendu, pop, tendre — toujours librement choisi. Jamais honteux. Jamais imposé.</p>
-      <p class="manifeste-quote">Parce que la curiosité est une énergie. Et chez Crousti FR, elle porte des talons.</p>
-      <p class="manifeste-p">Et cette curiosité n'a pas d'âge. À 40 ans, la façon d'être dans un cadre — d'y apporter quelque chose de vrai, d'ancré — ça ne s'invente pas. C'est exactement ce qu'on cherche.</p>
-    </div>
-  </section>
-
-  <!-- ══ PROCESS ══════════════════════════════════════════════════════════════ -->
-  <section id="process">
-    <div class="process-header rv-up">
-      <span class="sec-label" style="color:rgba(255,241,214,.6)">Comment ça se passe</span>
-      <h2 class="process-h2">
-        6 étapes. <span class="j">Transparent.</span> <span class="r">Sans surprise.</span>
-      </h2>
-    </div>
-    <div class="process-grid" id="process-grid"></div>
-  </section>
-
-  <!-- ══ TICKER 2 ═════════════════════════════════════════════════════════════ -->
-  <div class="ticker ticker-violet">
-    <div class="ticker-track" id="ticker2"></div>
+<!-- ══ PROCESS ══════════════════════════════════════════════════════════════ -->
+<section id="process">
+  <div class="process-hdr rv">
+    <span class="slabel" style="color:rgba(255,241,214,.6)">Comment ça se passe</span>
+    <h2 class="process-h2">6 étapes. <span class="j">Transparent.</span> <span class="r">Sans surprise.</span></h2>
   </div>
-
-  <!-- ══ GARANTIES ════════════════════════════════════════════════════════════ -->
-  <section id="garanties">
-    <div class="garanties-inner">
-      <div class="garanties-header rv-up">
-        <div>
-          <span class="sec-label" style="color:rgba(9,7,10,.6)">Tes garanties</span>
-          <h2 class="garanties-h2">
-            Ce qu'on te garantit.<br><span>Sans exception.</span>
-          </h2>
-        </div>
-        <p style="font-size:.88rem;color:rgba(9,7,10,.55);max-width:260px;line-height:1.7">
-          Pas des arguments marketing — les conditions de base.
-        </p>
-      </div>
-      <div class="garanties-grid" id="garanties-grid"></div>
+  <div class="process-grid">
+    <div class="step rv rl" style="background:#FF4FA3;border-top:3px solid #09070A">
+      <div class="step-num" style="color:rgba(9,7,10,.12)">01</div>
+      <div class="step-icon">✉️</div>
+      <div class="step-title" style="color:#09070A">Postule en 2 min</div>
+      <p class="step-desc" style="color:rgba(9,7,10,.8)">Prénom ou pseudo, âge, zone géo. Aucune photo à ce stade.</p>
     </div>
-  </section>
-
-  <!-- ══ TÉMOIGNAGES ══════════════════════════════════════════════════════════ -->
-  <section id="temoignages">
-    <div class="temoignages-inner">
-      <div class="rv-up">
-        <span class="sec-label" style="color:rgba(9,7,10,.6)">Elles l'ont fait</span>
-        <h2 class="temoignages-h2">Ce qu'elles en disent.</h2>
-      </div>
-      <div class="temo-grid" id="temo-grid"></div>
+    <div class="step rv rr" style="background:#09070A;border-top:3px solid #09070A">
+      <div class="step-num" style="color:rgba(139,61,255,.4)">02</div>
+      <div class="step-icon">💬</div>
+      <div class="step-title" style="color:#8B3DFF">On se parle</div>
+      <p class="step-desc" style="color:rgba(255,241,214,.55)">Message ou visio, à ton choix. Contrat, conditions, questions.</p>
     </div>
-  </section>
-
-  <!-- ══ FAQ ══════════════════════════════════════════════════════════════════ -->
-  <section id="faq">
-    <div class="faq-inner">
-      <div class="rv-up">
-        <span class="sec-label" style="color:rgba(255,241,214,.6)">FAQ</span>
-        <h2 class="faq-h2">Tes questions.<br><span>Nos réponses.</span></h2>
-      </div>
-      <div class="faq-list" id="faq-list"></div>
+    <div class="step rv rl" style="background:#8B3DFF;border-top:3px solid #09070A">
+      <div class="step-num" style="color:rgba(255,241,214,.12)">03</div>
+      <div class="step-icon">🎭</div>
+      <div class="step-title" style="color:#FFF1D6">On construit ton univers</div>
+      <p class="step-desc" style="color:rgba(255,241,214,.8)">Quel profil, quels formats, quelles limites. Tu valides tout.</p>
     </div>
-  </section>
+    <div class="step rv rr" style="background:#09070A">
+      <div class="step-num" style="color:rgba(255,216,77,.4)">04</div>
+      <div class="step-icon">📸</div>
+      <div class="step-title" style="color:#FFD84D">Le tournage</div>
+      <p class="step-desc" style="color:rgba(255,241,214,.55)">Ambiance pro et détendue. Tu stoppes quand tu veux.</p>
+    </div>
+    <div class="step rv rl" style="background:#E51D4E">
+      <div class="step-num" style="color:rgba(255,241,214,.12)">05</div>
+      <div class="step-icon">✅</div>
+      <div class="step-title" style="color:#FFF1D6">Tu valides tout</div>
+      <p class="step-desc" style="color:rgba(255,241,214,.8)">Chaque image te passe par les mains avant publication.</p>
+    </div>
+    <div class="step rv rr" style="background:#09070A">
+      <div class="step-num" style="color:rgba(255,79,163,.4)">06</div>
+      <div class="step-icon">💸</div>
+      <div class="step-title" style="color:#FF4FA3">Payée sous 48h</div>
+      <p class="step-desc" style="color:rgba(255,241,214,.55)">Tarif fixé à l'avance. Rien ne bouge sans accord écrit.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- ══ FORMULAIRE ════════════════════════════════════════════════════════════ -->
-  <section id="postuler">
-    <div class="form-inner">
-      <div class="form-top rv-up">
-        <div>
-          <span class="sec-label" style="color:rgba(255,241,214,.6)">Candidature</span>
-          <h2 class="form-h2">Prête à<br>nous rejoindre&nbsp;?</h2>
-        </div>
-        <div class="form-badge">
+<!-- ══ TICKER 2 ═════════════════════════════════════════════════════════════ -->
+<div class="ticker ticker-violet">
+  <div class="ticker-track">
+    <span class="ticker-item">📄 CONTRAT AVANT TOUT</span>
+    <span class="ticker-item">🔒 ANONYMAT GARANTI</span>
+    <span class="ticker-item">💸 PAYÉE SOUS 48H</span>
+    <span class="ticker-item">✅ TU VALIDES TOUT</span>
+    <span class="ticker-item">🛑 DROIT DE RETRAIT</span>
+    <span class="ticker-item">🤝 RELATION LONG TERME</span>
+    <span class="ticker-item">📄 CONTRAT AVANT TOUT</span>
+    <span class="ticker-item">🔒 ANONYMAT GARANTI</span>
+    <span class="ticker-item">💸 PAYÉE SOUS 48H</span>
+    <span class="ticker-item">✅ TU VALIDES TOUT</span>
+    <span class="ticker-item">🛑 DROIT DE RETRAIT</span>
+    <span class="ticker-item">🤝 RELATION LONG TERME</span>
+  </div>
+</div>
+
+<!-- ══ GARANTIES ════════════════════════════════════════════════════════════ -->
+<section id="garanties">
+  <div class="gar-wrap">
+    <div class="gar-hdr rv">
+      <div>
+        <span class="slabel" style="color:rgba(9,7,10,.6)">Tes garanties</span>
+        <h2 class="gar-h2">Ce qu'on te garantit.<br><span>Sans exception.</span></h2>
+      </div>
+      <p class="gar-sub">Pas des arguments marketing — les conditions de base.</p>
+    </div>
+    <div class="gar-grid">
+      <div class="gar-card rv rp" style="background:#FF4FA3">
+        <div class="gar-icon">📄</div>
+        <div class="gar-title" style="color:#09070A">Contrat avant tout</div>
+        <p class="gar-desc" style="color:rgba(9,7,10,.77)">Droits à l'image, durée, usages : tout écrit avant de commencer.</p>
+      </div>
+      <div class="gar-card rv rp" style="background:#8B3DFF">
+        <div class="gar-icon">🔒</div>
+        <div class="gar-title" style="color:#FFF1D6">Anonymat garanti</div>
+        <p class="gar-desc" style="color:rgba(255,241,214,.77)">Pseudo, angles validés, visage masquable, données jamais publiées. Aucune traçabilité vers ton identité réelle, ton réseau professionnel ou ton entourage personnel.</p>
+      </div>
+      <div class="gar-card rv rp" style="background:#1E7BFF">
+        <div class="gar-icon">🛑</div>
+        <div class="gar-title" style="color:#FFF1D6">Droit de retrait</div>
+        <p class="gar-desc" style="color:rgba(255,241,214,.77)">Tu retires n'importe quel contenu à tout moment. Traitement 24h.</p>
+      </div>
+      <div class="gar-card rv rp" style="background:#E51D4E">
+        <div class="gar-icon">💸</div>
+        <div class="gar-title" style="color:#FFF1D6">Rémunération fixe</div>
+        <p class="gar-desc" style="color:rgba(255,241,214,.77)">Tarif par session défini avant, bonus sur performance.</p>
+      </div>
+      <div class="gar-card rv rp" style="background:#09070A">
+        <div class="gar-icon">✅</div>
+        <div class="gar-title" style="color:#FFF1D6">Tu valides tout</div>
+        <p class="gar-desc" style="color:rgba(255,241,214,.77)">Chaque image te passe par les mains avant publication.</p>
+      </div>
+      <div class="gar-card rv rp" style="background:#FF4FA3">
+        <div class="gar-icon">🤝</div>
+        <div class="gar-title" style="color:#09070A">Relation long terme</div>
+        <p class="gar-desc" style="color:rgba(9,7,10,.77)">On cherche des collaboratrices régulières, pas des one-shot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TÉMOIGNAGES ══════════════════════════════════════════════════════════ -->
+<section id="temos">
+  <div class="temos-wrap">
+    <div class="rv">
+      <span class="slabel" style="color:rgba(9,7,10,.6)">Elles l'ont fait</span>
+      <h2 class="temos-h2">Ce qu'elles en disent.</h2>
+    </div>
+    <div class="temo-grid">
+      <div class="temo-card rv rp" style="background:#09070A;transform:rotate(-1deg)">
+        <div class="temo-qm" style="color:#FF4FA3">"</div>
+        <p class="temo-txt" style="color:#FFF1D6">J'avais peur que ce soit comme les autres. Le premier appel m'a rassurée en 10 min. Contrat clair, tournage sérieux et détendu. Je suis revenue 4 fois.</p>
+        <div class="temo-sep">
+          <div class="temo-av" style="background:#FF4FA3;color:#09070A">L</div>
           <div>
-            <div class="form-badge-icon">👠</div>
-            <div class="form-badge-label">Réponse<br>48h</div>
+            <div class="temo-name" style="color:#FFF1D6">La Pop Curieuse</div>
+            <div class="temo-uni" style="color:#FFF1D6">Drôle d'Envie · Crousti Talons</div>
           </div>
         </div>
       </div>
-      <p class="form-intro">Aucune photo requise à ce stade. Juste quelques infos pour qu'on se connaisse.</p>
-
-      <!-- Succès -->
-      <div class="form-success" id="form-success">
-        <span class="form-success-icon">👠</span>
-        <h3>Candidature reçue !</h3>
-        <p>On revient vers toi dans les 48h. À très vite.</p>
+      <div class="temo-card rv rp" style="background:#8B3DFF;transform:rotate(1.5deg)">
+        <div class="temo-qm" style="color:#E51D4E">"</div>
+        <p class="temo-txt" style="color:#FFF1D6">Mon style est très marqué. Ils ne l'ont pas normalisé — ils l'ont mis en valeur. Je me suis sentie utilisée pour ce que je suis vraiment.</p>
+        <div class="temo-sep">
+          <div class="temo-av" style="background:#E51D4E;color:#FFF1D6">M</div>
+          <div>
+            <div class="temo-name" style="color:#FFF1D6">L'Originale Décalée</div>
+            <div class="temo-uni" style="color:#FFF1D6">Crousti Lab · Bonbon Noir</div>
+          </div>
+        </div>
       </div>
+      <div class="temo-card rv rp" style="background:#FFD84D;transform:rotate(-0.5deg)">
+        <div class="temo-qm" style="color:#8B3DFF">"</div>
+        <p class="temo-txt" style="color:#09070A">J'avais peur d'arriver là et qu'on me dise poliment que j'étais trop vieille. C'est l'inverse qui s'est passé. Ma façon d'être dans le cadre, ils l'ont cherchée — pas tolérée.</p>
+        <div class="temo-sep">
+          <div class="temo-av" style="background:#8B3DFF;color:#FFF1D6">C</div>
+          <div>
+            <div class="temo-name" style="color:#09070A">L'Attitude Assumée · 42 ans</div>
+            <div class="temo-uni" style="color:#09070A">Crousti Talons · Clac Club</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Formulaire -->
-      <div class="form-box" id="form-box">
-        <div class="form-field">
-          <label class="form-label" for="f-profil">Mon profil (optionnel)</label>
-          <select class="form-select" id="f-profil" name="profil">
-            <option value="">Je ne sais pas encore</option>
-            <option value="La Pop Curieuse">🍭 La Pop Curieuse</option>
-            <option value="L'Attitude Assumée">💋 L'Attitude Assumée</option>
-            <option value="La Complicité Ouverte">🌺 La Complicité Ouverte</option>
-            <option value="L'Originale Décalée">🦋 L'Originale Décalée</option>
-            <option value="L'Énergique Pop">🍒 L'Énergique Pop</option>
-          </select>
-        </div>
-        <div class="form-row form-field">
-          <div>
-            <label class="form-label" for="f-prenom">Prénom ou pseudo <span style="color:var(--rose)">*</span></label>
-            <input class="form-input" id="f-prenom" type="text" placeholder="Pseudo ou prénom" />
-          </div>
-          <div>
-            <label class="form-label" for="f-age">Âge <span style="color:var(--rose)">*</span></label>
-            <input class="form-input" id="f-age" type="number" placeholder="Ton âge" min="18" max="99" />
-          </div>
-        </div>
-        <div class="form-field">
-          <label class="form-label" for="f-email">Email confidentiel <span style="color:var(--rose)">*</span></label>
-          <input class="form-input" id="f-email" type="email" placeholder="ton@email.fr" />
-        </div>
-        <div class="form-field">
-          <label class="form-label" for="f-zone">Zone géographique</label>
-          <input class="form-input" id="f-zone" type="text" placeholder="Paris, Lyon, Marseille..." />
-        </div>
-        <div class="form-field">
-          <label class="form-label" for="f-motivation">Ce qui t'attire</label>
-          <textarea class="form-textarea" id="f-motivation" placeholder="L'esthétique, la liberté créative, la rémunération..."></textarea>
-        </div>
-        <div class="form-error-msg" id="form-error">⚠️ Prénom, âge et email sont requis pour envoyer ta candidature.</div>
-        <p class="form-privacy">🔒 Infos strictement confidentielles. Aucune photo requise.</p>
-        <button class="btn-submit" id="btn-submit" onclick="submitForm()">
-          Envoyer ma candidature 👠
+<!-- ══ FAQ ══════════════════════════════════════════════════════════════════ -->
+<section id="faq">
+  <div class="faq-wrap">
+    <div class="rv">
+      <span class="slabel" style="color:rgba(255,241,214,.6)">FAQ</span>
+      <h2 class="faq-h2">Tes questions.<br><span>Nos réponses.</span></h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Je dois avoir de l'expérience ?</span>
+          <span class="faq-icon">+</span>
         </button>
+        <div class="faq-ans">
+          <p class="faq-r">Non. L'attitude prime sur le CV. On t'accompagne si tu démarres.</p>
+        </div>
+      </div>
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Puis-je faire masquer mon visage ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">
+          <p class="faq-r">Oui, totalement. On définit ensemble les angles avant le tournage.</p>
+        </div>
+      </div>
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Comment est fixée la rémunération ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">
+          <p class="faq-r">Tarif par session défini avant, par écrit. Bonus transparents sur perf.</p>
+        </div>
+      </div>
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Et si je veux arrêter en cours ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">
+          <p class="faq-r">Tu stoppes, on s'arrête. Aucun contenu non validé ne sera publié.</p>
+        </div>
+      </div>
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Mon entourage peut-il tomber dessus ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">
+          <p class="faq-r">Pseudo, géo cachée, pas de référencement nominatif. On en parle ensemble.</p>
+        </div>
+      </div>
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Je ne rentre dans aucun profil ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">
+          <p class="faq-r">Le tableau est un guide. Postule, on voit ensemble.</p>
+        </div>
+      </div>
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">À 40 ans, est-ce que j'ai vraiment ma place ici ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">
+          <p class="faq-r">Oui — et pas par tolérance. L'assurance, la façon d'habiter son corps, la présence dans le cadre : tout ça s'acquiert avec le temps. Ce que tu apportes à 40 ans, une 22 ans ne peut pas le simuler. C'est une valeur réelle, pas un quota.</p>
+        </div>
+      </div>
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">J'ai un réseau pro établi. Comment vous gérez la discrétion ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">
+          <p class="faq-r">On en parle précisément à l'étape 2, avant tout engagement. Pseudo, géo masquée, absence de référencement nominatif, paramétrage des accès : chaque mesure est discutée avec toi et documentée dans le contrat. Rien n'est publié sans que tu aies validé chaque détail.</p>
+        </div>
+      </div>
+
+      <div class="faq-item rv rl">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">Mon corps n'est pas celui des magazines. Vous cherchez vraiment ça ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">
+          <p class="faq-r">On cherche une façon d'être dans le cadre, pas une silhouette. Le physique "standard" n'est pas notre territoire — la curiosité, l'authenticité et la présence le sont. Si tu doutes, postule quand même. On te dira honnêtement ce qu'on voit.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ FORMULAIRE ════════════════════════════════════════════════════════════ -->
+<section id="postuler">
+  <div class="form-wrap">
+    <div class="form-top rv">
+      <div>
+        <span class="slabel" style="color:rgba(255,241,214,.6)">Candidature</span>
+        <h2 class="form-h2">Prête à<br>nous rejoindre&nbsp;?</h2>
+      </div>
+      <div class="form-badge">
+        <span>👠</span>
+        <small>Réponse<br>48h</small>
       </div>
     </div>
-  </section>
+    <p class="form-intro">Aucune photo requise à ce stade. Juste quelques infos pour qu'on se connaisse.</p>
 
-  <!-- ══ FOOTER ════════════════════════════════════════════════════════════════ -->
-  <footer>
-    <div class="footer-logo">
-      <span class="footer-logo-crousti">CROUSTI</span>
-      <span class="footer-logo-fr">FR</span>
-      <span class="logo-heel">👠</span>
+    <!-- Message succès -->
+    <div class="form-success" id="form-success">
+      <span class="icon">👠</span>
+      <h3>Candidature reçue !</h3>
+      <p>On revient vers toi dans les 48h. À très vite.</p>
     </div>
-    <div class="footer-links">
-      <a class="footer-link" href="#" target="_blank">Instagram</a>
-      <a class="footer-link" href="#" target="_blank">Email créatrices</a>
-      <a class="footer-link" href="#" target="_blank">Mentions légales</a>
-      <a class="footer-link" href="#" target="_blank">Confidentialité</a>
+
+    <!-- Formulaire -->
+    <div class="form-box" id="form-box">
+      <div class="form-field">
+        <label class="form-label" for="f-profil">Mon profil (optionnel)</label>
+        <select class="form-select" id="f-profil">
+          <option value="">Je ne sais pas encore</option>
+          <option>🍭 La Pop Curieuse</option>
+          <option>💋 L'Attitude Assumée</option>
+          <option>🌺 La Complicité Ouverte</option>
+          <option>🦋 L'Originale Décalée</option>
+          <option>🍒 L'Énergique Pop</option>
+        </select>
+      </div>
+      <div class="form-row form-field">
+        <div>
+          <label class="form-label" for="f-prenom">Prénom ou pseudo <em>*</em></label>
+          <input class="form-input" id="f-prenom" type="text" placeholder="Pseudo ou prénom">
+        </div>
+        <div>
+          <label class="form-label" for="f-age">Âge <em>*</em></label>
+          <input class="form-input" id="f-age" type="number" placeholder="Ton âge" min="18" max="99">
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-email">Email confidentiel <em>*</em></label>
+        <input class="form-input" id="f-email" type="email" placeholder="ton@email.fr">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-zone">Zone géographique</label>
+        <input class="form-input" id="f-zone" type="text" placeholder="Paris, Lyon, Marseille...">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="f-motivation">Ce qui t'attire</label>
+        <textarea class="form-textarea" id="f-motivation" placeholder="L'esthétique, la liberté créative, la rémunération..."></textarea>
+      </div>
+      <div class="form-err-msg" id="form-err">⚠️ Prénom, âge et email sont requis pour envoyer ta candidature.</div>
+      <p class="form-privacy">🔒 Infos strictement confidentielles. Aucune photo requise.</p>
+      <button class="btn-submit" id="btn-submit" onclick="submitForm()">Envoyer ma candidature 👠</button>
     </div>
-    <span class="footer-18">18+</span>
-  </footer>
+  </div>
+</section>
 
-  <!-- ══ SCRIPT ════════════════════════════════════════════════════════════════ -->
+<!-- ══ FOOTER ════════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">
+    <b class="r">CROUSTI</b>
+    <b>FR</b>
+    <span class="logo-heel">👠</span>
+  </div>
+  <div class="footer-links">
+    <a class="footer-link" href="#" target="_blank">Instagram</a>
+    <a class="footer-link" href="#" target="_blank">Email créatrices</a>
+    <a class="footer-link" href="#" target="_blank">Mentions légales</a>
+    <a class="footer-link" href="#" target="_blank">Confidentialité</a>
+  </div>
+  <span class="footer-18">18+</span>
+</footer>
 
-  <script src="js/main.js"></script>
+<!-- ══ JAVASCRIPT ════════════════════════════════════════════════════════════ -->
+
+<script src="js/main.js"></script>
 </body>
 </html>
